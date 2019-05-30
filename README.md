@@ -11,7 +11,7 @@ git clone https://github.com/s51507/python-lottery.git
 ```
 1. 開啟lotteryMain.py
 
-2. 最下面打上想要的彩種代碼，時時彩要在括弧內打上玩法編號(1~3)
+2. 最下面打上想要測的彩種代碼，時時彩要在括弧內打上玩法編號(1~3)
 
 3. Shift + F10
 ```

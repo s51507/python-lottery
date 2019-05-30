@@ -20,16 +20,21 @@ git clone https://github.com/s51507/python-lottery.git
 ## Games
 
 ```
-時時彩 ：重慶時時彩(cqssc)、極速時時彩(jsssc)、羅馬時時彩(lmssc)、騰訊分分彩(txffc)、新疆時時彩(xjssc)
+時時彩　：重慶時時彩(cqssc)、極速時時彩(jsssc)、羅馬時時彩(lmssc)、騰訊分分彩(txffc)、新疆時時彩(xjssc)
 
-PK10  ：北京賽車(bjpk10)、88賽馬(horse88)、極速賽車(jssc)、威尼斯賽艇(wnsst)、幸運飛艇(xyft)
+PK10　 ：北京賽車(bjpk10)、88賽馬(horse88)、極速賽車(jssc)、威尼斯賽艇(wnsst)、幸運飛艇(xyft)
+
+快三　　：江蘇快三(jsk3)、湖北快三(hbk3)、吉林快三(jlk3)
 ```
 
 
 ## Update
 
 ```bash
-v1.0.00 - 目前完成彩種
+v1.1.00 - add
+          快三  系列：江蘇快三、湖北快三、吉林快三
+
+v1.0.00 - add
           時時彩系列：重慶時時彩、極速時時彩、羅馬時時彩、騰訊分分彩、新疆時時彩
           PK10 系列：北京賽車、88賽馬、極速賽車、威尼斯賽艇、幸運飛艇
 

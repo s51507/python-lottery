@@ -44,7 +44,7 @@ def xjssc(gameid):
 
 
 # 北京賽車
-def bjpk10(gameid):
+def bjpk10():
     game = gl('北京賽車', 'pk10')
     for now in game:
         bet('bjpk10', now)
@@ -52,7 +52,7 @@ def bjpk10(gameid):
 
 
 # 88賽馬
-def horse88(gameid):
+def horse88():
     game = gl('88賽馬', 'pk10')
     for now in game:
         bet('horse88', now)
@@ -60,7 +60,7 @@ def horse88(gameid):
 
 
 # 極速賽車
-def jssc(gameid):
+def jssc():
     game = gl('極速賽車', 'pk10')
     for now in game:
         bet('jssc', now)
@@ -68,7 +68,7 @@ def jssc(gameid):
 
 
 # 威尼斯賽艇
-def wnsst(gameid):
+def wnsst():
     game = gl('威尼斯賽艇', 'pk10')
     for now in game:
         bet('wnsst', now)
@@ -76,12 +76,37 @@ def wnsst(gameid):
 
 
 # 幸運飛艇
-def xyft(gameid):
+def xyft():
     game = gl('幸運飛艇', 'pk10')
     for now in game:
         bet('xyft', now)
     return
 
 
+#江蘇快三
+def jsk3():
+    game = gl('江蘇快三', 'k3')
+    for now in game:
+        bet('jsk3', now)
+    return
+
+
+#湖北快三
+def hbk3():
+    game = gl('湖北快三', 'k3')
+    for now in game:
+        bet('hbk3', now)
+    return
+
+
+#吉林快三(還拿不到開獎號不能測)
+def jlk3():
+    game = gl('吉林快三', 'k3')
+    for now in game:
+        bet('jlk3', now)
+    return
+
+
 login()
 cqssc('1')
+#jsk3()

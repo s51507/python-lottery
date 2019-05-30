@@ -107,6 +107,22 @@ def jlk3():
     return
 
 
+#福彩3D
+def fc3d():
+    game = gl('福彩3D', '3d')
+    for now in game:
+        bet('fc3d', now)
+    return
+
+
+#體彩排列三
+def pl3():
+    game = gl('體彩排列三', '3d')
+    for now in game:
+        bet('pl3', now)
+    return
+
+
 login()
 cqssc('1')
 #jsk3()

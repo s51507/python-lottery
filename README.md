@@ -25,12 +25,17 @@ git clone https://github.com/s51507/python-lottery.git
 PK10　 ：北京賽車(bjpk10)、88賽馬(horse88)、極速賽車(jssc)、威尼斯賽艇(wnsst)、幸運飛艇(xyft)
 
 快三　　：江蘇快三(jsk3)、湖北快三(hbk3)、吉林快三(jlk3)
+
+3D     ：福彩3D(fc3d)、體彩排列三(pl3)
 ```
 
 
 ## Update
 
 ```bash
+v1.2.00 - add
+          3D   系列：福彩3D、體彩排列三
+
 v1.1.00 - add
           快三  系列：江蘇快三、湖北快三、吉林快三
 

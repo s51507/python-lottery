@@ -37,7 +37,7 @@ def ssc_1(gameName):
             '03.' + gameName + '-龍虎：萬>百_分_7.8%',
             '6',
             [
-                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(3) > span:nth-child(1)'
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > span:nth-child(1)'
             ],
             cent,
             rb78

@@ -110,10 +110,16 @@ def bet(lottery, game):
     wait('#bet-list-view > div.bottom-block > div.betting-bottom-bar_main_1nOle > div > button')
     web.save_screenshot('.\\pic\\' + name + '.png')
     click('#bet-list-view > div.bottom-block > div.betting-bottom-bar_main_1nOle > div > button')
-    # 確認有無跳出下注錯誤訊息-未實作 #L8PMYKfw- > div
+    # 確認有無跳出下注錯誤訊息-未驗證 .alertToast
+    try:
+        web.find_element_by_css_selector('.alertToast').is_displayed()
+        print(getText('alertToast'))
+    except:
+        wait('#bet-dialog > div > div.title')
+        print(getText('#bet-dialog > div > div.title') + '\n' +
+              '================================================================================================')
+        click('#bet-dialog > div > div.flex-layout-row.flex-center > button')
+
     # 確認有無跳出延期訊息　　-未實作 #app > div.v-dialog__content.v-dialog__content--active > div
-    wait('#bet-dialog > div > div.title')
-    print(getText('#bet-dialog > div > div.title') + '\n' +
-          '================================================================================================')
-    click('#bet-dialog > div > div.flex-layout-row.flex-center > button')
+    # 出現延期點確定 #app > div.v-dialog__content.v-dialog__content--active > div > div > div.v-card__actions > div > button.ig-dialog__btn.v-btn.v-btn--outline.v-btn--depressed.theme--light.primary--text
     return

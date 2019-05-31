@@ -123,6 +123,22 @@ def pl3():
     return
 
 
+#廣東快樂十分
+def gdklsf():
+    game = gl('廣東快樂十分', 'klsf')
+    for now in game:
+        bet('gdklsf', now)
+    return
+
+
+#重慶幸運農場
+def cqxync():
+    game = gl('重慶幸運農場', 'klsf')
+    for now in game:
+        bet('cqxync', now)
+    return
+
+
 login()
 cqssc('1')
-#jsk3()
+# jsk3()

@@ -110,10 +110,11 @@ def bet(lottery, game):
     wait('#bet-list-view > div.bottom-block > div.betting-bottom-bar_main_1nOle > div > button')
     web.save_screenshot('.\\pic\\' + name + '.png')
     click('#bet-list-view > div.bottom-block > div.betting-bottom-bar_main_1nOle > div > button')
-    # 確認有無跳出下注錯誤訊息-未驗證 .alertToast
+    # 確認有無跳出下注錯誤訊息
     try:
+        sleep(1.5)
         web.find_element_by_css_selector('.alertToast').is_displayed()
-        print(getText('alertToast'))
+        print('***********' + getText('.alertToast') + '***********')
     except:
         wait('#bet-dialog > div > div.title')
         print(getText('#bet-dialog > div > div.title') + '\n' +

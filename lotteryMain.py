@@ -29,7 +29,7 @@ def lmssc(gameid):
 
 # 騰訊分分彩
 def txffc(gameid):
-    game = gl('騰訊分分彩', 'ssc_' + gameid)
+    game = gl('騰訊分分彩', 'ffc_' + gameid)
     for now in game:
         bet('txffc', now)
     return
@@ -140,5 +140,5 @@ def cqxync():
 
 
 login()
-cqssc('1')
+txffc('5')
 # jsk3()

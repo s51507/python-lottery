@@ -21,7 +21,7 @@ def getText(element):
 # 等待元素出現
 def wait(element):
     try:
-        WebDriverWait(web, 5).until(
+        WebDriverWait(web, 20).until(
             EC.presence_of_element_located((By.CSS_SELECTOR, element))
         )
     except:
@@ -49,8 +49,7 @@ def login():
     web.get(host)
     web.set_window_position(0, 0)
     web.set_window_size(450, 1045)
-    click(
-        '#app > div > div > div > div:nth-child(12) > div.bottom-nav_bottom-nav_2bggx.flex-layout-row > div > button:nth-child(4)')
+    click('button[value="info"]')
     sleep(0.5)
     web.find_element_by_css_selector('input[placeholder="请输入用户名"]').send_keys('ian002')
     web.find_element_by_css_selector('input[placeholder="请输入密码"').send_keys('qqq111')

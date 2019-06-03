@@ -35,6 +35,14 @@ PK10　 ：北京賽車(bjpk10)、88賽馬(horse88)、極速賽車(jssc)、威�
 ## Update
 
 ```bash
+v1.4.00 - add
+          ffc0~7 - 分分彩間格太短，10個一組比較好
+          
+          fix
+          lotteryGame - '37.' + gameName + '-後三-組選包膽：7_角_6.0%' 只能下一注
+          lotteryBet - login按鈕改為 - button[value="info"]
+          wait - 等待時間增加到20秒
+
 v1.3.02 - add
           lotteryBet - 確認有無跳出下注錯誤訊息
 

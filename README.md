@@ -35,6 +35,9 @@ PK10　 ：北京賽車(bjpk10)、88賽馬(horse88)、極速賽車(jssc)、威�
 ## Update
 
 ```bash
+v2.0.00 - add
+          Android下注
+
 v1.4.00 - add
           ffc0~7 - 分分彩間格太短，10個一組比較好
           

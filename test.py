@@ -1,104 +1,89 @@
-server = 'http://localhost:4723/wd/hub'
-desired_caps = {
-    'platformName': 'Android',
-    'deviceName': 'HWRNE',
-    'appPackage': 'com.qygame.lottery',
-    'appActivity': '.ui.main.MainActivity'
-}
-
-from appium import webdriver
+from selenium import webdriver
+from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
-from appium.webdriver.common.touch_action import TouchAction
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.action_chains import ActionChains
 from time import sleep
 
-driver = webdriver.Remote(server, desired_caps)
+web = webdriver.Chrome()
+host = 'http://www.lottery2.lianfa.co'
+dot = '#app > div.v-dialog__content.v-dialog__content--active > div > div > div.pa-3.v-card.v-sheet.theme--light > div.ig-betting-slider_main_3k2wQ > div > div > div > div.vue-slider-dot > div.vue-slider-dot-handle'
 
-def clickId(element):
-    driver.find_element_by_id(element).click()
-    return
+rb78 = 330
+rb70 = 296
+rb60 = 253
+rb50 = 210
+rb40 = 167
+rb30 = 125
+rb20 = 83
+rb10 = 40
 
 
-def clickXpath(element):
-    driver.find_element_by_xpath(element).click()
-    return
-
-
+# getText
 def getText(element):
-    return driver.find_element_by_id(element).text
+    return web.find_element_by_css_selector(element).text
 
 
-def gameSelect0(num1):
-    game1 = "/hierarchy/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.FrameLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[" + num1 + "]/android.widget.TextView"
-    clickXpath(game1)
+# 等待元素出現
+def wait(element):
+    try:
+        WebDriverWait(web, 20).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, element))
+        )
+    except:
+        print('error:' + element + 'not found')
+        web.save_screenshot('.\\pic\\error.png')
     return
 
 
-def gameSelect1(num1, num2):
-    game1 = "/hierarchy/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.FrameLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[" + num1 + "]/android.widget.TextView"
-    game2 = "/hierarchy/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.FrameLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView[2]/android.widget.RelativeLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[" + num2 + "]/android.widget.TextView"
-    clickXpath(game1)
-    clickXpath(game2)
+# 找到元素位置
+def find(element):
+    targetElem = web.find_element_by_css_selector(element)
+    web.execute_script("arguments[0].scrollIntoView();", targetElem)
     return
 
 
-def gameSelect2(num1, num2, num3):
-    game1 = "/hierarchy/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.FrameLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[" + num1 + "]/android.widget.TextView"
-    game2 = "/hierarchy/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.FrameLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView[2]/android.widget.RelativeLayout[" + num2 + "]/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[" + num3 + "]/android.widget.TextView"
-    clickXpath(game1)
-    clickXpath(game2)
+def click2(element):
+    targetElem = web.find_element_by_css_selector(element)
+    web.execute_script("arguments[0].click();", targetElem)
+    return
+
+
+# click
+def click(btn):
+    # print(btn)
+    wait(btn)
+    newbtn = web.find_element_by_css_selector(btn)
+    ActionChains(web).move_to_element(newbtn).click(newbtn).perform()
+    # web.find_element_by_css_selector(btn).click()
     return
 
 
 # 登入
 def login():
-    wait = WebDriverWait(driver, 30)
-    clickId("com.qygame.lottery:id/ll_personal")
-    account = driver.find_element_by_id("com.qygame.lottery:id/ed_account")
-    account.clear()
-    account.send_keys("ian003")
-    password = driver.find_element_by_id("com.qygame.lottery:id/ed_password")
-    password.clear()
-    password.send_keys("qqq111")
-    clickId("com.qygame.lottery:id/btn_login")
+    web.get(host)
+    web.set_window_position(0, 0)
+    web.set_window_size(450, 1045)
+    click('button[value="info"]')
+    sleep(0.5)
+    web.find_element_by_css_selector('input[placeholder="请输入用户名"]').send_keys('ian001')
+    web.find_element_by_css_selector('input[placeholder="请输入密码"').send_keys('qqq111')
+    click('#login > div.flex-layout-column.login-panel > div.login-btn > button')
+    wait('#app > div > div > div > div:nth-child(6)')
+    wait(
+        '#app > div.v-dialog__content.v-dialog__content--active > div > div.ig-dialog__content.v-card.v-sheet.theme--light > div.ig-dialog__title-container > i')
+    click(
+        '#app > div.v-dialog__content.v-dialog__content--active > div > div.ig-dialog__content.v-card.v-sheet.theme--light > div.ig-dialog__title-container > i')
     return
 
 
+# 下注
 def bet():
-    # 購彩大廳
-    clickId("com.qygame.lottery:id/ll_bet")
-    # 重慶時時彩
-    clickXpath(
-        "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/androidx.viewpager.widget.ViewPager/android.widget.LinearLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.ImageView")
-    # 選玩法
-    clickId("com.qygame.lottery:id/imv_select")
-    gameSelect1("1", "1")
-    # 選號碼
-    sleep(1)
-    clickXpath(
-        "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView[2]/android.widget.RelativeLayout[1]/android.widget.LinearLayout/android.widget.TextView")
-    clickXpath(
-        "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[2]/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView[2]/android.widget.RelativeLayout[1]/android.widget.LinearLayout/android.widget.TextView")
-    clickXpath(
-        "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[3]/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView[2]/android.widget.RelativeLayout[1]/android.widget.LinearLayout/android.widget.TextView")
-    swipeUp()
-    clickXpath(
-        "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[3]/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView[2]/android.widget.RelativeLayout[1]/android.widget.LinearLayout/android.widget.TextView")
-    clickXpath(
-        "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView[2]/android.widget.RelativeLayout[1]/android.widget.LinearLayout/android.widget.TextView")
-    # 添加投注
-    clickId("com.qygame.lottery:id/btn_betting")
-    clickId(cent)
-    swipeRight(rb40)
-    print('返點：' + getText("com.qygame.lottery:id/tv_rebate") + '\n' +
-          '賠率：' + getText("com.qygame.lottery:id/tv_odds") + '\n' +
-          '注數：' + getText("com.qygame.lottery:id/tv_total_bet_slip") + '\n' +
-          '總金額：' + getText("com.qygame.lottery:id/tv_total_bet_amount"))
-    clickId("com.qygame.lottery:id/btn_betting")
-    # 確認投注
-    clickId("com.qygame.lottery:id/btn_betting")
-    print(getText("com.qygame.lottery:id/tv_title") + '\n' +
-          '================================================================================================')
-    clickId("com.qygame.lottery:id/btn_enter")
+    web.get(host + '/#/lottery/bjkl8?lotteryCategoryID=300')
+    wait('#bet-area-component-renderer')
+    wait(
+        '#app > div.application--wrap > div > div.betting-bottom-bar_main_1nOle > div.betting-bottom-bar_container_v7kMX')
+    click2('#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(8) > button:nth-child(3)')
     return
 
 

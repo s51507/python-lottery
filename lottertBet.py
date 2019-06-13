@@ -38,7 +38,8 @@ def click(btn):
     # print(btn)
     wait(btn)
     newbtn = web.find_element_by_css_selector(btn)
-    ActionChains(web).move_to_element(newbtn).click(newbtn).perform()
+    web.execute_script("arguments[0].click();", newbtn)
+    # ActionChains(web).move_to_element(newbtn).click(newbtn).perform()
     # web.find_element_by_css_selector(btn).click()
     return
 

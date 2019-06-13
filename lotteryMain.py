@@ -148,5 +148,5 @@ def hksix(gameid):
 
 
 login()
-hksix('3')
-# jsk3()
+# hksix('3')
+jsk3()

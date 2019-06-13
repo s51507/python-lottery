@@ -7,10 +7,7 @@ from time import sleep
 
 web = webdriver.Chrome()
 host = 'http://www.lottery2.lianfa.co'
-dot = '#app > div.v-dialog__content.v-dialog__content--active > div > div > div.pa-3.v-card.v-sheet.theme--light > ' \
-      'div.ig-betting-slider_main_3k2wQ > div > ' \
-      'div.v-input.v-input--slider.v-input--slider--thumb-label.theme--light.my-0.mx-2 > div > div.v-input__slot > ' \
-      'div > div.v-slider__thumb-container.v-slider__thumb-container--show-label > div.v-slider__thumb '
+dot = '#app > div.v-dialog__content.v-dialog__content--active > div > div > div.pa-3.v-card.v-sheet.theme--light > div.ig-betting-slider_main_3k2wQ > div > div > div > div.vue-slider-dot > div.vue-slider-dot-handle'
 
 
 # getText
@@ -53,12 +50,14 @@ def login():
     web.set_window_size(450, 1045)
     click('button[value="info"]')
     sleep(0.5)
-    web.find_element_by_css_selector('input[placeholder="请输入用户名"]').send_keys('ian002')
+    web.find_element_by_css_selector('input[placeholder="请输入用户名"]').send_keys('ian001')
     web.find_element_by_css_selector('input[placeholder="请输入密码"').send_keys('qqq111')
     click('#login > div.flex-layout-column.login-panel > div.login-btn > button')
     wait('#app > div > div > div > div:nth-child(6)')
-    wait('#app > div.v-dialog__content.v-dialog__content--active > div > div.ig-dialog__content.v-card.v-sheet.theme--light > div.ig-dialog__title-container > i')
-    click('#app > div.v-dialog__content.v-dialog__content--active > div > div.ig-dialog__content.v-card.v-sheet.theme--light > div.ig-dialog__title-container > i')
+    wait(
+        '#app > div.v-dialog__content.v-dialog__content--active > div > div.ig-dialog__content.v-card.v-sheet.theme--light > div.ig-dialog__title-container > i')
+    click(
+        '#app > div.v-dialog__content.v-dialog__content--active > div > div.ig-dialog__content.v-card.v-sheet.theme--light > div.ig-dialog__title-container > i')
     return
 
 

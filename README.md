@@ -37,6 +37,9 @@ PK10　 ：北京賽車(bjpk10)、88賽馬(horse88)、極速賽車(jssc)、威�
 ## Update
 
 ```bash
+v2.1.01 - fix
+          rebate point
+
 v2.1.00 - add
           香港六合彩
           配合六合彩更動下注方式

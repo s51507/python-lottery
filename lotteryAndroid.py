@@ -64,12 +64,14 @@ def getText(element):
     return driver.find_element_by_id(element).text
 
 
+# 選擇玩法 - 0層
 def gameSelect0(num1):
     game1 = "/hierarchy/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.FrameLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[" + num1 + "]/android.widget.TextView"
     clickXpath(game1)
     return
 
 
+# 選擇玩法 - 1層
 def gameSelect1(num1, num2):
     game1 = "/hierarchy/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.FrameLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[" + num1 + "]/android.widget.TextView"
     game2 = "/hierarchy/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.FrameLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView[2]/android.widget.RelativeLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[" + num2 + "]/android.widget.TextView"
@@ -78,6 +80,7 @@ def gameSelect1(num1, num2):
     return
 
 
+# 選擇玩法 - 2層
 def gameSelect2(num1, num2, num3):
     game1 = "/hierarchy/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.FrameLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[" + num1 + "]/android.widget.TextView"
     game2 = "/hierarchy/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.FrameLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView[2]/android.widget.RelativeLayout[" + num2 + "]/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[" + num3 + "]/android.widget.TextView"

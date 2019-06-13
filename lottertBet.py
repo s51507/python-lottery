@@ -38,6 +38,8 @@ def find(element):
 
 # click
 def click(btn):
+    # print(btn)
+    wait(btn)
     newbtn = web.find_element_by_css_selector(btn)
     ActionChains(web).move_to_element(newbtn).click(newbtn).perform()
     # web.find_element_by_css_selector(btn).click()
@@ -55,6 +57,8 @@ def login():
     web.find_element_by_css_selector('input[placeholder="请输入密码"').send_keys('qqq111')
     click('#login > div.flex-layout-column.login-panel > div.login-btn > button')
     wait('#app > div > div > div > div:nth-child(6)')
+    wait('#app > div.v-dialog__content.v-dialog__content--active > div > div.ig-dialog__content.v-card.v-sheet.theme--light > div.ig-dialog__title-container > i')
+    click('#app > div.v-dialog__content.v-dialog__content--active > div > div.ig-dialog__content.v-card.v-sheet.theme--light > div.ig-dialog__title-container > i')
     return
 
 
@@ -72,12 +76,13 @@ def logout():
 
 
 # 下注
-def bet(lottery, game):
+def bet(lottery, game, rb=1):
     name = game[0]
     Id = game[1]
     nums = game[2]
     money = game[3]
-    rebate = game[4]
+    if rb == 1:
+        rebate = game[4]
     print(name)
     web.get(host + '/#/lottery/' + lottery + '?lotteryCategoryID=' + Id)
     wait('#bet-area-component-renderer')
@@ -94,19 +99,29 @@ def bet(lottery, game):
     wait('.bottom-bar--active')
     sleep(0.5)
     click(money)
-    ActionChains(web).drag_and_drop_by_offset(web.find_element_by_css_selector(dot), rebate, 0).perform()
-    print('返點：' + getText(
-        '#app > div.v-dialog__content.v-dialog__content--active > div > div > div.pa-3.v-card.v-sheet.theme--light > div.ig-betting-slider_main_3k2wQ > span:nth-child(1)') + '\n' +
-          '賠率：' + getText(
-        '#app > div.v-dialog__content.v-dialog__content--active > div > div > div.pa-3.v-card.v-sheet.theme--light > div.ig-betting-slider_main_3k2wQ > span:nth-child(3)') + '\n' +
-          '注數：' + getText(
-        '#app > div.application--wrap > div > div.betting-bottom-bar_main_1nOle > div.betting-bottom-bar_container_v7kMX.bottom-bar--active > div > span.mx-2 > span') + '\n' +
-          '總金額：' + getText(
-        '#app > div.application--wrap > div > div.betting-bottom-bar_main_1nOle > div.betting-bottom-bar_container_v7kMX.bottom-bar--active > div > span.betting-bottom-bar_large_1gi64 > span.ig-primary'))
+    if rb == 1:
+        ActionChains(web).drag_and_drop_by_offset(web.find_element_by_css_selector(dot), rebate, 0).perform()
+        print('返點：' + getText(
+            '#app > div.v-dialog__content.v-dialog__content--active > div > div > div.pa-3.v-card.v-sheet.theme--light > div.ig-betting-slider_main_3k2wQ > span:nth-child(1)') + '\n' +
+              '賠率：' + getText(
+            '#app > div.v-dialog__content.v-dialog__content--active > div > div > div.pa-3.v-card.v-sheet.theme--light > div.ig-betting-slider_main_3k2wQ > span:nth-child(3)') + '\n' +
+              '注數：' + getText(
+            '#app > div.application--wrap > div > div.betting-bottom-bar_main_1nOle > div.betting-bottom-bar_container_v7kMX.bottom-bar--active > div > span.mx-2 > span') + '\n' +
+              '總金額：' + getText(
+            '#app > div.application--wrap > div > div.betting-bottom-bar_main_1nOle > div.betting-bottom-bar_container_v7kMX.bottom-bar--active > div > span.betting-bottom-bar_large_1gi64 > span.ig-primary'))
     click(
         '#app > div.application--wrap > div > div.betting-bottom-bar_main_1nOle > div.betting-bottom-bar_container_v7kMX.bottom-bar--active > button.v-btn.theme--light.ig-btn_main_2mP9w.betting-bottom-bar_betting_1qX5B')
     wait('#bet-list-view')
     wait('#bet-list-view > div.bottom-block > div.betting-bottom-bar_main_1nOle > div > button')
+    if rb == 0:
+        print('返點：' + getText(
+            '#bet-list-view > div.bet-list-content.flex-layout-column > div.bet-list-cell.flex-layout-row > div.flex-layout-column.flex-fill > div:nth-child(2) > div:nth-child(3)') + '\n' +
+              '賠率：' + getText(
+            '#bet-list-view > div.bet-list-content.flex-layout-column > div.bet-list-cell.flex-layout-row > div.flex-layout-column.flex-fill > div:nth-child(2) > div.enhance') + '\n' +
+              '注數：' + getText(
+            '#bet-list-view > div.bottom-block > div.betting-bottom-bar_main_1nOle > div > div > span.mx-2 > span') + '\n' +
+              '總金額：' + getText(
+            '#bet-list-view > div.bottom-block > div.betting-bottom-bar_main_1nOle > div > div > span.betting-bottom-bar_large_1gi64 > span.ig-primary'))
     web.save_screenshot('.\\pic\\' + name + '.png')
     click('#bet-list-view > div.bottom-block > div.betting-bottom-bar_main_1nOle > div > button')
     # 確認有無跳出下注錯誤訊息

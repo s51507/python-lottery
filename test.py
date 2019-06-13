@@ -13,43 +13,6 @@ from time import sleep
 
 driver = webdriver.Remote(server, desired_caps)
 
-rb78 = 690
-rb70 = 610
-rb60 = 530
-rb50 = 450
-rb40 = 370
-rb30 = 290
-rb20 = 210
-rb10 = 130
-dollar = "com.qygame.lottery:id/rb_dollar"
-dime = "com.qygame.lottery:id/rb_dime"
-cent = "com.qygame.lottery:id/rb_cent"
-
-
-def swipeUp():
-    size = driver.get_window_size()
-    x = size['width'] * 0.5
-    driver.swipe(x, size['height'] * 0.75, x, size['height'] * 0.25, 500)
-    return
-
-
-def swipeRight(rebate):
-    get_seekbar = driver.find_element_by_id("com.qygame.lottery:id/sb_ratio")
-    start = get_seekbar.location.get('x')
-    print(start)
-
-    end = get_seekbar.size.get('width')
-    print(end)
-
-    ycd = get_seekbar.location.get('y')
-    print(ycd)
-
-    TouchAction(driver).press(get_seekbar).move_to(get_seekbar, rebate, 0).release().perform()
-    # TouchAction(driver).press(get_seekbar).move_to(get_seekbar, end, ycd).release().perform()
-    # TouchAction(driver).press(x=225, y=1580).move_to(x=rebate, y=1580).release().perform()
-    return
-
-
 def clickId(element):
     driver.find_element_by_id(element).click()
     return

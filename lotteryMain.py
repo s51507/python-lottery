@@ -3,7 +3,7 @@ from lottertBet import login
 from lottertBet import bet
 
 
-# 重慶時時彩
+# 重慶時時彩 1~3
 def cqssc(gameid):
     game = gl('重慶時時彩', 'ssc_' + gameid)
     for now in game:
@@ -11,7 +11,7 @@ def cqssc(gameid):
     return
 
 
-# 極速時時彩
+# 極速時時彩 1~3
 def jsssc(gameid):
     game = gl('極速時時彩', 'ssc_' + gameid)
     for now in game:
@@ -19,7 +19,7 @@ def jsssc(gameid):
     return
 
 
-# 羅馬時時彩
+# 羅馬時時彩 1~3
 def lmssc(gameid):
     game = gl('羅馬時時彩', 'ssc_' + gameid)
     for now in game:
@@ -27,7 +27,7 @@ def lmssc(gameid):
     return
 
 
-# 騰訊分分彩
+# 騰訊分分彩 0~7
 def txffc(gameid):
     game = gl('騰訊分分彩', 'ffc_' + gameid)
     for now in game:
@@ -35,7 +35,7 @@ def txffc(gameid):
     return
 
 
-# 新疆時時彩
+# 新疆時時彩 1~3
 def xjssc(gameid):
     game = gl('新疆時時彩', 'ssc_' + gameid)
     for now in game:
@@ -139,6 +139,14 @@ def cqxync():
     return
 
 
+#香港六合彩 1~3
+def hksix(gameid):
+    game = gl('香港六合彩', 'six_' + gameid)
+    for now in game:
+        bet('hksix', now, 0)
+    return
+
+
 login()
-txffc('5')
+hksix('3')
 # jsk3()

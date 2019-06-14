@@ -45,14 +45,14 @@ def click(btn):
 
 
 # 登入
-def login():
+def login(user, pwd):
     web.get(host)
     web.set_window_position(0, 0)
     web.set_window_size(450, 1045)
     click('button[value="info"]')
     sleep(0.5)
-    web.find_element_by_css_selector('input[placeholder="请输入用户名"]').send_keys('ian001')
-    web.find_element_by_css_selector('input[placeholder="请输入密码"').send_keys('qqq111')
+    web.find_element_by_css_selector('input[placeholder="请输入用户名"]').send_keys(user)
+    web.find_element_by_css_selector('input[placeholder="请输入密码"').send_keys(pwd)
     click('#login > div.flex-layout-column.login-panel > div.login-btn > button')
     wait('#app > div > div > div > div:nth-child(6)')
     wait(

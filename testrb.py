@@ -85,5 +85,6 @@ def bet():
     return
 
 
-login()
-bet()
+print(input('RRRR:')+'aaa')
+#login()
+#bet()

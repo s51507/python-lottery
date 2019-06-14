@@ -4,6 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 from time import sleep
+from re import match
 
 web = webdriver.Chrome()
 host = 'http://www.lottery2.lianfa.co'

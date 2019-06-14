@@ -24,7 +24,7 @@ git clone https://github.com/s51507/python-lottery.git
 
 PK10　 ：北京賽車(bjpk10)、88賽馬(horse88)、極速賽車(jssc)、威尼斯賽艇(wnsst)、幸運飛艇(xyft)
 
-11選5  ：
+11選5  ：廣東11選5(gdsyxw)---未完成
 
 快樂十分：廣東快樂十分(gdklsf)、重慶幸運農場(cqxync)
 
@@ -32,17 +32,22 @@ PK10　 ：北京賽車(bjpk10)、88賽馬(horse88)、極速賽車(jssc)、威�
 
 3D     ：福彩3D(fc3d)、體彩排列三(pl3)
 
-快樂8  ：
+快樂8  ：北京快樂8(bjkl8)---未完成
 
 六合彩 ：香港六合彩(hksix)
 
-幸運28 ：
+幸運28 ：PC蛋蛋(pcdd)---未完成
 ```
 
 
 ## Update
 
 ```bash
+v3.0.00 - 優化一堆東西
+          現在可以自己輸入帳號密碼了
+          現在可以自己輸入要測試啥東東了
+          發現包成exe的方法
+
 v2.2.00 - optimization
           click方法優化，用js來點擊就不會發生找不到的問題了(ゝ∀･)
 

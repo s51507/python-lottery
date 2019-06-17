@@ -1759,7 +1759,7 @@ def pk10(gameName):
         [
             '25.' + gameName + '-猜冠亞軍-直選單式：87_角_5.0%',
             '98',
-            '87',
+            '0807',
             dime,
             rb50
         ],
@@ -1786,7 +1786,7 @@ def pk10(gameName):
         [
             '28.' + gameName + '-猜冠亞季軍-直選單式：652_角_2.0%',
             '102',
-            '652',
+            '060502',
             dime,
             rb20
         ],
@@ -2891,6 +2891,528 @@ def six_3(gameName):
     ]
 
 
+def syxw_1(gameName):
+    return [
+        [
+            '01.' + gameName + '-三碼-前三-直選複式：1,2,3_元_7.8%',
+            '118',
+            [
+                '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(1)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(2)',
+                '#bet-area-component-renderer > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(3)'
+            ],
+            dollar,
+            rb78
+        ],
+        [
+            '02.' + gameName + '-三碼-前三-直選單式：4,5,6_元_7.8%',
+            '119',
+            '040506',
+            dollar,
+            rb78
+        ],
+        [
+            '03.' + gameName + '-三碼-前三-組選複式：7,8,9_元_7.8%',
+            '120',
+            [
+                '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(2)',
+                '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(3)',
+                '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(4)'
+            ],
+            dollar,
+            rb78
+        ],
+        [
+            '04.' + gameName + '-三碼-前三-組選單式：10,11,01_元_7.8%',
+            '121',
+            '101101',
+            dollar,
+            rb78
+        ],
+        [
+            '05.' + gameName + '-三碼-前三-組選膽拖：2|3,4_元_7.8%',
+            '122',
+            [
+                '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div > div:nth-child(1) > button:nth-child(2)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(3)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(4)'
+            ],
+            dollar,
+            rb78
+        ],
+        [
+            '06.' + gameName + '-三碼-中三-直選複式：5,6,7_角_7.8%',
+            '123',
+            [
+                '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(5)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(1)',
+                '#bet-area-component-renderer > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(2)'
+            ],
+            dime,
+            rb78
+        ],
+        [
+            '07.' + gameName + '-三碼-中三-直選單式：8,9,10_角_7.8%',
+            '124',
+            '080910',
+            dime,
+            rb78
+        ],
+        [
+            '08.' + gameName + '-三碼-中三-組選複式：11,1,2_角_7.8%',
+            '125',
+            [
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > button',
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(1)',
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(2)'
+            ],
+            dime,
+            rb78
+        ],
+        [
+            '09.' + gameName + '-三碼-中三-組選單式：3,4,5_角_7.8%',
+            '126',
+            '030405',
+            dime,
+            rb78
+        ],
+        [
+            '10.' + gameName + '-三碼-中三-組選膽拖：6|7,8_角_7.8%',
+            '127',
+            [
+                '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div > div:nth-child(2) > button:nth-child(1)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(2)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(3)'
+            ],
+            dime,
+            rb78
+        ],
+        [
+            '11.' + gameName + '-三碼-後三-直選複式：9,10,11_分_7.0%',
+            '128',
+            [
+                '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(4)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(5)',
+                '#bet-area-component-renderer > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > button'
+            ],
+            cent,
+            rb70
+        ],
+        [
+            '12.' + gameName + '-三碼-後三-直選單式：1,2,3_分_7.0%',
+            '129',
+            '010203',
+            cent,
+            rb70
+        ],
+        [
+            '13.' + gameName + '-三碼-後三-組選複式：4,5,6_分_7.0%',
+            '130',
+            [
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(4)',
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(5)',
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(1)'
+            ],
+            cent,
+            rb70
+        ],
+        [
+            '14.' + gameName + '-三碼-後三-組選單式：7,8,9_分_7.0%',
+            '131',
+            '070809',
+            cent,
+            rb70
+        ],
+        [
+            '15.' + gameName + '-三碼-後三-組選膽拖：10|11,1_分_7.0%',
+            '132',
+            [
+                '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div > div:nth-child(2) > button:nth-child(5)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > button',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(1)'
+            ],
+            cent,
+            rb70
+        ],
+        [
+            '16.' + gameName + '-二碼-前二-直選複式：2,3_元_6.0%',
+            '135',
+            [
+                '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(2)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(3)'
+            ],
+            dollar,
+            rb60
+        ],
+        [
+            '17.' + gameName + '-二碼-前二-直選單式：4,5_元_6.0%',
+            '136',
+            '0405',
+            dollar,
+            rb60
+        ],
+        [
+            '18.' + gameName + '-二碼-前二-組選複式：6,7_元_6.0%',
+            '137',
+            [
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(1)',
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(2)'
+            ],
+            dollar,
+            rb60
+        ],
+        [
+            '19.' + gameName + '-二碼-前二-組選單式：8,9_元_6.0%',
+            '138',
+            '0809',
+            dollar,
+            rb60
+        ],
+        [
+            '20.' + gameName + '-二碼-前二-組選膽拖：10|11_元_6.0%',
+            '139',
+            [
+                '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div > div:nth-child(2) > button:nth-child(5)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > button'
+            ],
+            dollar,
+            rb60
+        ],
+        [
+            '21.' + gameName + '-二碼-後二-直選複式：1.2_角_5.0%',
+            '141',
+            [
+                '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(1)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(2)'
+            ],
+            dime,
+            rb50
+        ],
+        [
+            '22.' + gameName + '-二碼-後二-直選單式：3.4_角_5.0%',
+            '142',
+            '0304',
+            dime,
+            rb50
+        ],
+        [
+            '23.' + gameName + '-二碼-後二-組選複式：5.6_角_5.0%',
+            '143',
+            [
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(5)',
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(1)'
+            ],
+            dime,
+            rb50
+        ],
+        [
+            '24.' + gameName + '-二碼-後二-組選單式：7.8_角_5.0%',
+            '144',
+            '0708',
+            dime,
+            rb50
+        ],
+        [
+            '25.' + gameName + '-二碼-後二-組選膽拖：9|10_角_5.0%',
+            '145',
+            [
+                '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div > div:nth-child(2) > button:nth-child(4)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(5)'
+            ],
+            dime,
+            rb50
+        ],
+        [
+            '26.' + gameName + '-定位膽：11,,,,_分_4.0%',
+            '146',
+            [
+                '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > button'
+            ],
+            cent,
+            rb40
+        ],
+        [
+            '27.' + gameName + '-不定膽-前三位：1_分_4.0%',
+            '149',
+            [
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(1)'
+            ],
+            cent,
+            rb40
+        ],
+        [
+            '28.' + gameName + '-不定膽-中三位：2_分_4.0%',
+            '150',
+            [
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(2)'
+            ],
+            cent,
+            rb40
+        ],
+        [
+            '29.' + gameName + '-不定膽-後三位：3_分_4.0%',
+            '151',
+            [
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(3)'
+            ],
+            cent,
+            rb40
+        ]
+    ]
+
+
+def syxw_2(gameName):
+    return [
+        [
+            '30.' + gameName + '-任選單式-任選一中一：4_元_3.0%',
+            '161',
+            '04',
+            dollar,
+            rb30
+        ],
+        [
+            '31.' + gameName + '-任選單式-任選二中二：5,6_元_3.0%',
+            '162',
+            '0506',
+            dollar,
+            rb30
+        ],
+        [
+            '32.' + gameName + '-任選單式-任選三中三：7,8,9_元_3.0%',
+            '163',
+            '070809',
+            dollar,
+            rb30
+        ],
+        [
+            '33.' + gameName + '-任選單式-任選四中四：10,11,1,2_元_3.0%',
+            '164',
+            '10110102',
+            dollar,
+            rb30
+        ],
+        [
+            '34.' + gameName + '-任選單式-任選五中五：3,4,5,6,7_元_3.0%',
+            '165',
+            '0304050607',
+            dollar,
+            rb30
+        ],
+        [
+            '35.' + gameName + '-任選單式-任選六中五：8,9,10,11,1,2_元_3.0%',
+            '166',
+            '080910110102',
+            dollar,
+            rb30
+        ],
+        [
+            '36.' + gameName + '-任選單式-任選七中五：3,4,5,6,7,8,9_元_3.0%',
+            '167',
+            '03040506070809',
+            dollar,
+            rb30
+        ],
+        [
+            '37.' + gameName + '-任選單式-任選八中五：10,11,1,2,3,4,5,6_元_3.0%',
+            '168',
+            '1011010203040506',
+            dollar,
+            rb30
+        ],
+        [
+            '38.' + gameName + '-任選膽拖-任選二中二：7|8_角_2.0%',
+            '170',
+            [
+                '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div > div:nth-child(2) > button:nth-child(2)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(3)'
+            ],
+            dime,
+            rb20
+        ],
+        [
+            '39.' + gameName + '-任選膽拖-任選三中三：9|10,11_角_2.0%',
+            '171',
+            [
+                '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div > div:nth-child(2) > button:nth-child(4)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(5)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > button'
+            ],
+            dime,
+            rb20
+        ],
+        [
+            '40.' + gameName + '-任選膽拖-任選四中四：1|2,3,4_角_2.0%',
+            '172',
+            [
+                '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div > div:nth-child(1) > button:nth-child(1)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(2)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(3)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(4)'
+            ],
+            dime,
+            rb20
+        ],
+        [
+            '41.' + gameName + '-任選膽拖-任選五中五：5|6,7,8,9_角_2.0%',
+            '173',
+            [
+                '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div > div:nth-child(1) > button:nth-child(5)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(1)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(2)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(3)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(4)'
+            ],
+            dime,
+            rb20
+        ],
+        [
+            '42.' + gameName + '-任選膽拖-任選六中五：10|11,1,2,3,4_角_2.0%',
+            '174',
+            [
+                '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div > div:nth-child(2) > button:nth-child(5)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > button',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(1)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(2)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(3)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(4)'
+            ],
+            dime,
+            rb20
+        ],
+        [
+            '43.' + gameName + '-任選膽拖-任選七中五：5|6,7,8,9,10,11_角_2.0%',
+            '175',
+            [
+                '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div > div:nth-child(1) > button:nth-child(5)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(1)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(2)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(3)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(4)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(5)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > button'
+            ],
+            dime,
+            rb20
+        ],
+        [
+            '44.' + gameName + '-任選膽拖-任選八中五：1|2,3,4,5,6,7,8_角_2.0%',
+            '176',
+            [
+                '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div > div:nth-child(1) > button:nth-child(1)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(2)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(3)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(4)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(5)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(1)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(2)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(3)'
+            ],
+            dime,
+            rb20
+        ],
+        [
+            '45.' + gameName + '-任選複式-任選一中一：9_分_1.0%',
+            '152',
+            [
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(4)'
+            ],
+            cent,
+            rb10
+        ],
+        [
+            '46.' + gameName + '-任選複式-任選二中二：10,11_分_1.0%',
+            '153',
+            [
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(5)',
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > button'
+            ],
+            cent,
+            rb10
+        ],
+        [
+            '47.' + gameName + '-任選複式-任選三中三：1,2,3_分_1.0%',
+            '154',
+            [
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(1)',
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(2)',
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(3)'
+            ],
+            cent,
+            rb10
+        ],
+        [
+            '48.' + gameName + '-任選複式-任選四中四：4,5,6,7_分_1.0%',
+            '155',
+            [
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(4)',
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(5)',
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(1)',
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(2)'
+            ],
+            cent,
+            rb10
+        ],
+        [
+            '49.' + gameName + '-任選複式-任選五中五：8,9,10,11,1_分_1.0%',
+            '156',
+            [
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(3)',
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(4)',
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(5)',
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > button',
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(1)'
+            ],
+            cent,
+            rb10
+        ],
+        [
+            '50.' + gameName + '-任選複式-任選六中五：2,3,4,5,6,7_分_1.0%',
+            '157',
+            [
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(2)',
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(3)',
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(4)',
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(5)',
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(1)',
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(2)'
+            ],
+            cent,
+            rb10
+        ],
+        [
+            '51.' + gameName + '-任選複式-任選七中午：8,9,10,11,1,2,3_分_1.0%',
+            '158',
+            [
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(3)',
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(4)',
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(5)',
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > button',
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(1)',
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(2)',
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(3)'
+            ],
+            cent,
+            rb10
+        ],
+        [
+            '52.' + gameName + '-任選複式-任選八中五：4,5,6,7,8,9,10,11_分_1.0%',
+            '159',
+            [
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(4)',
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(5)',
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(1)',
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(2)',
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(3)',
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(4)',
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(5)',
+                '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > button'
+            ],
+            cent,
+            rb10
+        ],
+    ]
+
+
 def getLottery(lottery, game):
     if game == 'ssc_1':
         return ssc_1(lottery)
@@ -2928,3 +3450,7 @@ def getLottery(lottery, game):
         return six_2(lottery)
     elif game == 'six_3':
         return six_3(lottery)
+    elif game == 'syxw_1':
+        return syxw_1(lottery)
+    elif game == 'syxw_2':
+        return syxw_2(lottery)

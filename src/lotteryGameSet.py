@@ -3412,11 +3412,12 @@ def syxw_2(gameName):
         ],
     ]
 
+
 def kl8(gameName):
     return [
         [
             '01.' + gameName + '-任選-一中一：11_元_7.0%',
-            '',
+            '300',
             [
                 '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > button:nth-child(1)'
             ],
@@ -3425,7 +3426,7 @@ def kl8(gameName):
         ],
         [
             '02.' + gameName + '-任選-二中二：12,22_元_6.0%',
-            '',
+            '301',
             [
                 '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > button:nth-child(2)',
                 '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(5) > button:nth-child(2)'
@@ -3435,7 +3436,7 @@ def kl8(gameName):
         ],
         [
             '03.' + gameName + '-任選-三中三：13,23,33_元_5.0%',
-            '',
+            '302',
             [
                 '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > button:nth-child(3)',
                 '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(5) > button:nth-child(3)',
@@ -3446,7 +3447,7 @@ def kl8(gameName):
         ],
         [
             '04.' + gameName + '-任選-四中四：14,24,34,44_角_4.0%',
-            '',
+            '303',
             [
                 '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > button:nth-child(4)',
                 '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(5) > button:nth-child(4)',
@@ -3458,7 +3459,7 @@ def kl8(gameName):
         ],
         [
             '05.' + gameName + '-任選-五中五：15,25,35,45,55_角_3.0%',
-            '',
+            '304',
             [
                 '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > button:nth-child(5)',
                 '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(5) > button:nth-child(5)',
@@ -3471,7 +3472,7 @@ def kl8(gameName):
         ],
         [
             '06.' + gameName + '-任選-六中五：16,26,36,46,56,66_角_2.0%',
-            '',
+            '305',
             [
                 '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > button:nth-child(1)',
                 '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(6) > button:nth-child(1)',
@@ -3485,7 +3486,7 @@ def kl8(gameName):
         ],
         [
             '07.' + gameName + '-任選-七中五：17,27,37,47,57,67,77_分_1.0%',
-            '',
+            '306',
             [
                 '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > button:nth-child(2)',
                 '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(6) > button:nth-child(2)',
@@ -3500,6 +3501,7 @@ def kl8(gameName):
         ]
 
     ]
+
 
 def getLottery(lottery, game):
     if game == 'ssc_1':

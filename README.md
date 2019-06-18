@@ -15,6 +15,8 @@ git clone https://github.com/s51507/python-lottery.git
    例如：sqssc(1) -> 重慶時時彩，畫面上第一排的玩法
 
 3. Shift + F10
+
+PS:打包指令：pyinstaller -F -i C:\python-lottery\icon\miku.ico C:\python-lottery\lotteryMain.py
 ```
 
 ## Games
@@ -35,14 +37,14 @@ PK10　 ：北京賽車(bjpk10)、88賽馬(horse88)、極速賽車(jssc)、威�
 快樂8  ：北京快樂8(bjkl8)---未完成
 
 六合彩 ：香港六合彩(hksix)
-
-幸運28 ：PC蛋蛋(pcdd)---未完成
 ```
 
 
 ## Update
 
 ```bash
+v4.0.01 - PC蛋蛋已消失，就先從這邊丟掉囉
+
 v4.0.00 - 優化整體架構
 
 v3.1.00 - add

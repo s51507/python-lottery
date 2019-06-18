@@ -3412,6 +3412,94 @@ def syxw_2(gameName):
         ],
     ]
 
+def kl8(gameName):
+    return [
+        [
+            '01.' + gameName + '-任選-一中一：11_元_7.0%',
+            '',
+            [
+                '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > button:nth-child(1)'
+            ],
+            dollar,
+            rb70
+        ],
+        [
+            '02.' + gameName + '-任選-二中二：12,22_元_6.0%',
+            '',
+            [
+                '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > button:nth-child(2)',
+                '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(5) > button:nth-child(2)'
+            ],
+            dollar,
+            rb60
+        ],
+        [
+            '03.' + gameName + '-任選-三中三：13,23,33_元_5.0%',
+            '',
+            [
+                '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > button:nth-child(3)',
+                '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(5) > button:nth-child(3)',
+                '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(7) > button:nth-child(3)'
+            ],
+            dollar,
+            rb50
+        ],
+        [
+            '04.' + gameName + '-任選-四中四：14,24,34,44_角_4.0%',
+            '',
+            [
+                '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > button:nth-child(4)',
+                '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(5) > button:nth-child(4)',
+                '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(7) > button:nth-child(4)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(4)'
+            ],
+            dime,
+            rb40
+        ],
+        [
+            '05.' + gameName + '-任選-五中五：15,25,35,45,55_角_3.0%',
+            '',
+            [
+                '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > button:nth-child(5)',
+                '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(5) > button:nth-child(5)',
+                '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(7) > button:nth-child(5)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > button:nth-child(5)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > button:nth-child(5)'
+            ],
+            dime,
+            rb30
+        ],
+        [
+            '06.' + gameName + '-任選-六中五：16,26,36,46,56,66_角_2.0%',
+            '',
+            [
+                '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > button:nth-child(1)',
+                '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(6) > button:nth-child(1)',
+                '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(8) > button:nth-child(1)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(1)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > button:nth-child(1)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(6) > button:nth-child(1)'
+            ],
+            dime,
+            rb20
+        ],
+        [
+            '07.' + gameName + '-任選-七中五：17,27,37,47,57,67,77_分_1.0%',
+            '',
+            [
+                '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > button:nth-child(2)',
+                '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(6) > button:nth-child(2)',
+                '#bet-area-component-renderer > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(8) > button:nth-child(2)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(2)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > button:nth-child(2)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(6) > button:nth-child(2)',
+                '#bet-area-component-renderer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(8) > button:nth-child(2)'
+            ],
+            cent,
+            rb10
+        ]
+
+    ]
 
 def getLottery(lottery, game):
     if game == 'ssc_1':
@@ -3454,3 +3542,5 @@ def getLottery(lottery, game):
         return syxw_1(lottery)
     elif game == 'syxw_2':
         return syxw_2(lottery)
+    elif game == 'kl8':
+        return kl8(lottery)

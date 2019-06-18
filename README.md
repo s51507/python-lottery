@@ -20,7 +20,6 @@ PS:打包指令：pyinstaller -F -i C:\python-lottery\icon\miku.ico C:\python-lo
 ```
 
 ## Games
-
 ```
 時時彩　：重慶時時彩(cqssc)、極速時時彩(jsssc)、羅馬時時彩(lmssc)、騰訊分分彩(txffc)、新疆時時彩(xjssc)
 
@@ -41,8 +40,12 @@ PK10　 ：北京賽車(bjpk10)、88賽馬(horse88)、極速賽車(jssc)、威�
 
 
 ## Update
-
+### Wap端 全彩種完成灑花 ｡:.ﾟヽ(*´∀`)ﾉﾟ.:｡
 ```bash
+v4.1.00 - add
+          北京快樂8
+          
+
 v4.0.01 - PC蛋蛋已消失，就先從這邊丟掉囉
 
 v4.0.00 - 優化整體架構

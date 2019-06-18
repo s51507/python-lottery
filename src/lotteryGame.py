@@ -152,3 +152,11 @@ def hksix(gameid):
     for now in game:
         bet('gdsyxw', now)
     return
+
+
+# 北京快樂8
+def bjkl8(gameid):
+    game = gl('北京快樂8', 'kl8')
+    for now in game:
+        bet('bjkl8', now)
+    return

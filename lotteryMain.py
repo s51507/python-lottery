@@ -42,9 +42,6 @@ print('目前所有彩種如下' + '\n' +
       '----------------------------' + '\n' +
       '六合彩：' + '\n' +
       '\t香港六合彩 - hksix 1~3' + '\n' +
-      '----------------------------' + '\n' +
-      '幸運28：' + '\n' +
-      '\tPC蛋蛋 - pcdd' + '\n' +
       '----------------------------' + '\n')
 
 while tmp > 0:
@@ -125,7 +122,5 @@ while tmp > 0:
         lotteryGame.hksix('2')
     elif game == 'hksix 3':
         lotteryGame.hksix('3')
-    elif game == 'pcdd':
-        lotteryGame.pcdd()
     else:
         print('?????????????')

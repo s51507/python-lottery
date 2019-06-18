@@ -4,9 +4,6 @@
     <list default="true" id="82e24e04-3995-4965-aab6-428c88606231" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lotteryGame.py" beforeDir="false" afterPath="$PROJECT_DIR$/lotteryGame.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lotteryGameSet.py" beforeDir="false" afterPath="$PROJECT_DIR$/lotteryGameSet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lotteryMain.py" beforeDir="false" afterPath="$PROJECT_DIR$/lotteryMain.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,10 +30,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lotteryMain.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1174">
+            <state relative-caret-position="1581">
               <caret line="94" column="26" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="26" />
               <folding>
                 <element signature="e#49#77#0" expanded="true" />
@@ -48,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lotteryGame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="148" column="12" lean-forward="true" selection-start-line="148" selection-start-column="12" selection-end-line="148" selection-end-column="12" />
+            <state relative-caret-position="2499">
+              <caret line="148" column="12" selection-start-line="148" selection-start-column="12" selection-end-line="148" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -57,8 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lotteryGameSet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="3452" column="23" lean-forward="true" selection-start-line="3452" selection-start-column="18" selection-end-line="3452" selection-end-column="23" />
+            <state relative-caret-position="664">
+              <caret line="2891" selection-start-line="2891" selection-end-line="2891" />
               <folding>
                 <element signature="e#1261#10724#0" />
                 <element signature="e#10752#21921#0" />
@@ -78,8 +75,8 @@
                 <element signature="e#91515#95563#0" />
                 <element signature="e#95591#99038#0" />
                 <element signature="e#99066#123319#0" />
-                <element signature="e#123348#133312#0" />
-                <element signature="e#133984#138283#0" />
+                <element signature="e#123348#133955#0" />
+                <element signature="e#133984#147528#0" />
               </folding>
             </state>
           </provider>
@@ -88,7 +85,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lottertBet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
+            <state relative-caret-position="799">
               <caret line="52" column="14" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
@@ -97,12 +94,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="476">
-                <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
+              <first_editor relative-caret-position="187">
+                <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
               </first_editor>
               <second_editor />
             </state>
@@ -113,7 +110,7 @@
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="595">
-              <caret line="41" column="58" lean-forward="true" selection-start-line="41" selection-start-column="58" selection-end-line="41" selection-end-column="58" />
+              <caret line="41" column="58" selection-start-line="41" selection-start-column="58" selection-end-line="41" selection-end-column="58" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -192,8 +189,8 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/lotteryMain.py" />
         <option value="$PROJECT_DIR$/lotteryGameSet.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/lotteryGame.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -372,12 +369,13 @@
       <workItem from="1560327457094" duration="4385000" />
       <workItem from="1560389164554" duration="21945000" />
       <workItem from="1560477596766" duration="16335000" />
-      <workItem from="1560742018881" duration="4680000" />
+      <workItem from="1560742018881" duration="6348000" />
+      <workItem from="1560824751535" duration="154000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="200703000" />
+    <option name="totallyTimeSpent" value="202525000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -390,8 +388,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49919224" visible="true" weight="0.16791044" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49919224" visible="true" weight="0.16950959" />
       <window_info id="Structure" order="1" sideWeight="0.50080776" side_tool="true" weight="0.1391258" />
       <window_info id="Favorites" order="2" sideWeight="0.50080776" side_tool="true" weight="0.1391258" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -401,10 +400,10 @@
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" sideWeight="0.4989339" weight="0.3286334" />
       <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.45575693" weight="0.22559653" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" sideWeight="0.45469084" visible="true" weight="0.22559653" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5335821" side_tool="true" visible="true" weight="0.3275488" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4664179" visible="true" weight="0.3275488" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5453092" side_tool="true" visible="true" weight="0.22559653" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4664179" weight="0.3275488" />
       <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.49626866" weight="0.329718" />
       <window_info anchor="bottom" id="Run" order="12" sideWeight="0.55277187" side_tool="true" weight="0.39045554" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -509,10 +508,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lotteryMain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1581">
+          <caret line="94" column="26" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="26" />
+          <folding>
+            <element signature="e#49#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lotteryGame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2499">
+          <caret line="148" column="12" selection-start-line="148" selection-start-column="12" selection-end-line="148" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lottertBet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="52" column="14" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
-          <caret line="41" column="58" lean-forward="true" selection-start-line="41" selection-start-column="58" selection-end-line="41" selection-end-column="58" />
+          <caret line="41" column="58" selection-start-line="41" selection-start-column="58" selection-end-line="41" selection-end-column="58" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
@@ -539,27 +565,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="476">
-            <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lotteryGame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="148" column="12" lean-forward="true" selection-start-line="148" selection-start-column="12" selection-end-line="148" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lotteryGameSet.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="3452" column="23" lean-forward="true" selection-start-line="3452" selection-start-column="18" selection-end-line="3452" selection-end-column="23" />
+        <state relative-caret-position="664">
+          <caret line="2891" selection-start-line="2891" selection-end-line="2891" />
           <folding>
             <element signature="e#1261#10724#0" />
             <element signature="e#10752#21921#0" />
@@ -579,29 +588,19 @@
             <element signature="e#91515#95563#0" />
             <element signature="e#95591#99038#0" />
             <element signature="e#99066#123319#0" />
-            <element signature="e#123348#133312#0" />
-            <element signature="e#133984#138283#0" />
+            <element signature="e#123348#133955#0" />
+            <element signature="e#133984#147528#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lottertBet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="52" column="14" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lotteryMain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1174">
-          <caret line="94" column="26" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="26" />
-          <folding>
-            <element signature="e#49#77#0" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="187">
+            <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

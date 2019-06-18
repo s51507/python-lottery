@@ -24,7 +24,7 @@ git clone https://github.com/s51507/python-lottery.git
 
 PK10　 ：北京賽車(bjpk10)、88賽馬(horse88)、極速賽車(jssc)、威尼斯賽艇(wnsst)、幸運飛艇(xyft)
 
-11選5  ：廣東11選5(gdsyxw)---未完成
+11選5  ：廣東11選5(gdsyxw)
 
 快樂十分：廣東快樂十分(gdklsf)、重慶幸運農場(cqxync)
 

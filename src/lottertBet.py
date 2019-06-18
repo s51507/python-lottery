@@ -5,7 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 from time import sleep
 
-web = webdriver.Chrome()
+web = webdriver.Chrome(r".\\data\\chromedriver.exe")
 host = 'http://www.lottery2.lianfa.co'
 dot = '#app > div.v-dialog__content.v-dialog__content--active > div > div > div.pa-3.v-card.v-sheet.theme--light > div.ig-betting-slider_main_3k2wQ > div > div > div > div.vue-slider-dot > div.vue-slider-dot-handle'
 

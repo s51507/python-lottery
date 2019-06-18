@@ -1,5 +1,5 @@
-from lotteryGameSet import getLottery as gl
-from lottertBet import bet
+from src.lotteryGameSet import getLottery as gl
+from src.lottertBet import bet
 
 
 # 重慶時時彩 1~3

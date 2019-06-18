@@ -1,7 +1,7 @@
 user = input('請輸入測試帳號：')
 pwd = input('請輸入測試密碼：')
-from lottertBet import login
-import lotteryGame
+from src.lottertBet import login
+from src import lotteryGame
 
 tmp = 1
 login(user, pwd)

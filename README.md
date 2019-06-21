@@ -16,7 +16,7 @@ git clone https://github.com/s51507/python-lottery.git
 
 3. Shift + F10
 
-PS:打包指令：pyinstaller -F -i C:\python-lottery\icon\miku.ico C:\python-lottery\lotteryMain.py
+PS:打包指令：pyinstaller -F -i C:\python-lottery\icon\miku.ico -n AutoBet C:\python-lottery\lotteryMain.py
 ```
 
 ## Games
@@ -33,7 +33,7 @@ PK10　 ：北京賽車(bjpk10)、88賽馬(horse88)、極速賽車(jssc)、威�
 
 3D     ：福彩3D(fc3d)、體彩排列三(pl3)
 
-快樂8  ：北京快樂8(bjkl8)---未完成
+快樂8  ：北京快樂8(bjkl8)
 
 六合彩 ：香港六合彩(hksix)
 ```
@@ -42,10 +42,17 @@ PK10　 ：北京賽車(bjpk10)、88賽馬(horse88)、極速賽車(jssc)、威�
 ## Update
 ### Wap端 全彩種完成灑花 ｡:.ﾟヽ(*´∀`)ﾉﾟ.:｡
 ```bash
+v5.0.00 - add
+          增加圖形化介面(ゝ∀･)
+          
+          已知問題
+          下注中不會顯示log
+          下注中不能移動視窗
+          Thread應該可以解決
+
 v4.1.00 - add
           北京快樂8
           
-
 v4.0.01 - PC蛋蛋已消失，就先從這邊丟掉囉
 
 v4.0.00 - 優化整體架構

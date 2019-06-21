@@ -1,7 +1,7 @@
 user = input('請輸入測試帳號：')
 pwd = input('請輸入測試密碼：')
 from src.lottertBet import login
-from src import lotteryGame
+from src.lotteryGame import *
 
 tmp = 1
 login(user, pwd)
@@ -26,12 +26,12 @@ print('目前所有彩種如下' + '\n' +
       '----------------------------' + '\n' +
       '快樂十分：' + '\n' +
       '\t廣東快樂十分 - gdklsf' + '\n' +
-      '\t重慶幸運農場 - cqxync' + '\n' +
+      '\t重慶幸運農場(已隱藏) - cqxync' + '\n' +
       '----------------------------' + '\n' +
       '快三：' + '\n' +
       '\t江蘇快三 - jsk3' + '\n' +
       '\t湖北快三 - hbk3' + '\n' +
-      '\t吉林快三 - jlk3' + '\n' +
+      '\t吉林快三(已隱藏) - jlk3' + '\n' +
       '----------------------------' + '\n' +
       '3D：' + '\n' +
       '\t福彩3D - fc3d' + '\n' +
@@ -47,80 +47,80 @@ print('目前所有彩種如下' + '\n' +
 while tmp > 0:
     game = input('請輸入要測試的彩種 例如:cqssc 1\n')
     if game == 'cqssc 1':
-        lotteryGame.cqssc('1')
+        cqssc('1')
     elif game == 'cqssc 2':
-        lotteryGame.cqssc('2')
+        cqssc('2')
     elif game == 'cqssc 3':
-        lotteryGame.cqssc('3')
+        cqssc('3')
     elif game == 'jsssc 1':
-        lotteryGame.jsssc('1')
+        jsssc('1')
     elif game == 'jsssc 2':
-        lotteryGame.jsssc('2')
+        jsssc('2')
     elif game == 'jsssc 3':
-        lotteryGame.jsssc('3')
+        jsssc('3')
     elif game == 'lmssc 1':
-        lotteryGame.lmssc('1')
+        lmssc('1')
     elif game == 'lmssc 2':
-        lotteryGame.lmssc('2')
+        lmssc('2')
     elif game == 'lmssc 3':
-        lotteryGame.lmssc('3')
+        lmssc('3')
     elif game == 'txffc 0':
-        lotteryGame.txffc('0')
+        txffc('0')
     elif game == 'txffc 1':
-        lotteryGame.txffc('1')
+        txffc('1')
     elif game == 'txffc 2':
-        lotteryGame.txffc('2')
+        txffc('2')
     elif game == 'txffc 3':
-        lotteryGame.txffc('3')
+        txffc('3')
     elif game == 'txffc 4':
-        lotteryGame.txffc('4')
+        txffc('4')
     elif game == 'txffc 5':
-        lotteryGame.txffc('5')
+        txffc('5')
     elif game == 'txffc 6':
-        lotteryGame.txffc('6')
+        txffc('6')
     elif game == 'txffc 7':
-        lotteryGame.txffc('7')
+        txffc('7')
     elif game == 'xjssc 1':
-        lotteryGame.xjssc('1')
+        xjssc('1')
     elif game == 'xjssc 2':
-        lotteryGame.xjssc('2')
+        xjssc('2')
     elif game == 'xjssc 3':
-        lotteryGame.xjssc('3')
+        xjssc('3')
     elif game == 'bjpk10':
-        lotteryGame.bjpk10()
+        bjpk10()
     elif game == 'horse88':
-        lotteryGame.horse88()
+        horse88()
     elif game == 'jssc':
-        lotteryGame.jssc()
+        jssc()
     elif game == 'wnsst':
-        lotteryGame.wnsst()
+        wnsst()
     elif game == 'xyft':
-        lotteryGame.xyft()
+        xyft()
     elif game == 'gdsyxw 1':
-        lotteryGame.gdsyxw('1')
+        gdsyxw('1')
     elif game == 'gdsyxw 2':
-        lotteryGame.gdsyxw('2')
+        gdsyxw('2')
     elif game == 'gdklsf':
-        lotteryGame.gdklsf()
+        gdklsf()
     elif game == 'cqxync':
-        lotteryGame.cqxync()
+        cqxync()
     elif game == 'jsk3':
-        lotteryGame.jsk3()
+        jsk3()
     elif game == 'hbk3':
-        lotteryGame.hbk3()
+        hbk3()
     elif game == 'jlk3':
-        lotteryGame.jlk3()
+        jlk3()
     elif game == 'fc3d':
-        lotteryGame.fc3d()
+        fc3d()
     elif game == 'pl3':
-        lotteryGame.pl3()
+        pl3()
     elif game == 'bjkl8':
-        lotteryGame.bjkl8()
+        bjkl8()
     elif game == 'hksix 1':
-        lotteryGame.hksix('1')
+        hksix('1')
     elif game == 'hksix 2':
-        lotteryGame.hksix('2')
+        hksix('2')
     elif game == 'hksix 3':
-        lotteryGame.hksix('3')
+        hksix('3')
     else:
         print('?????????????')

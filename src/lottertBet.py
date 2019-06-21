@@ -132,7 +132,7 @@ def bet(lottery, game, rb=1):
     except:
         wait('#bet-dialog > div > div.title')
         print(getText('#bet-dialog > div > div.title') + '\n' +
-              '================================================================================================')
+              '=====================================================================')
         click('#bet-dialog > div > div.flex-layout-row.flex-center > button')
 
     # 確認有無跳出延期訊息　　-未實作 #app > div.v-dialog__content.v-dialog__content--active > div

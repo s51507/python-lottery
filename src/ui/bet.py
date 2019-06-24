@@ -9,13 +9,6 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class LogStream(QtCore.QObject):
-    textWritten = QtCore.pyqtSignal(str)
-
-    def write(self, text):
-        self.textWritten.emit(str(text))
-
-
 class Ui_Form_bet(object):
     def setupUi(self, Form_bet):
         Form_bet.setObjectName("Form_bet")

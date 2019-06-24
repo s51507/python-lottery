@@ -4,7 +4,8 @@ from src.ui.login import Ui_Form_login as F_login
 from src.ui.bet import Ui_Form_bet as F_bet
 from src.lottertBet import login
 from src.lotteryGame import *
-from src.ui.bet import LogStream as ls
+from src.ui.log import LogStream as ls
+import threading
 
 
 class LoginWindow(QDialog, F_login):
@@ -126,6 +127,10 @@ class BetWindow(QDialog, F_bet):
             self.v_hksix.show()
 
     def bet(self, game):
+        tBet = threading.Thread(target=self.betting, args=(game,))
+        tBet.start()
+
+    def betting(self, game):
         if game == 'cqssc_1':
             cqssc('1')
         elif game == 'cqssc_2':
@@ -288,5 +293,4 @@ w_bet = BetWindow()
 w_login.btn_login.clicked.connect(w_bet.show)
 
 w_login.show()
-# w_bet.show()
 sys.exit(app.exec_())

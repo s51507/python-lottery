@@ -16,7 +16,9 @@ git clone https://github.com/s51507/python-lottery.git
 
 3. Shift + F10
 
-PS:打包指令：pyinstaller -F -i C:\python-lottery\icon\miku.ico -n AutoBet C:\python-lottery\lotteryMain.py
+PS:打包指令：
+pyinstaller -F -i C:\python-lottery\icon\miku.ico -n AutoBet C:\python-lottery\lotteryMain.py
+pyinstaller -F -i C:\python-lottery\icon\miku.ico -n AutoBet -w C:\python-lottery\lotteryUI.py
 ```
 
 ## Games
@@ -42,6 +44,11 @@ PK10　 ：北京賽車(bjpk10)、88賽馬(horse88)、極速賽車(jssc)、威�
 ## Update
 ### Wap端 全彩種完成灑花 ｡:.ﾟヽ(*´∀`)ﾉﾟ.:｡
 ```bash
+v5.1.00 - fix
+          上一版問題已修正完畢囉
+          
+          接下來應該就加機選跟一些其他的東西吧
+
 v5.0.00 - add
           增加圖形化介面(ゝ∀･)
           

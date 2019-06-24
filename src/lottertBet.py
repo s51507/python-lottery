@@ -8,6 +8,8 @@ from time import sleep
 web = webdriver.Chrome(r".\\data\\chromedriver.exe")
 host = 'http://www.lottery2.lianfa.co'
 dot = '#app > div.v-dialog__content.v-dialog__content--active > div > div > div.pa-3.v-card.v-sheet.theme--light > div.ig-betting-slider_main_3k2wQ > div > div > div > div.vue-slider-dot > div.vue-slider-dot-handle'
+web.set_window_position(0, 0)
+web.set_window_size(450, 1045)
 
 
 # getText
@@ -47,8 +49,6 @@ def click(btn):
 # 登入
 def login(user, pwd):
     web.get(host)
-    web.set_window_position(0, 0)
-    web.set_window_size(450, 1045)
     click('button[value="info"]')
     sleep(0.5)
     web.find_element_by_css_selector('input[placeholder="请输入用户名"]').send_keys(user)

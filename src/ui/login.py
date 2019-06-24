@@ -14,7 +14,7 @@ class Ui_Form_login(object):
         Form_login.resize(895, 558)
         Form_login.setMouseTracking(False)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("../icon/初音/12.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap(":/icon/miku.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         Form_login.setWindowIcon(icon)
         Form_login.setLayoutDirection(QtCore.Qt.LeftToRight)
         Form_login.setAutoFillBackground(False)

@@ -410,7 +410,9 @@ class Ui_Form_bet(object):
         self.tb_lottery.setGeometry(QtCore.QRect(30, 210, 441, 421))
         self.tb_lottery.setStyleSheet("background-color: rgba(12, 12, 12, 80);\n"
 "background-image: url();\n"
-"color: rgb(255, 255, 255);")
+"color: rgb(255, 255, 255);\n"
+"border: 2px;\n"
+"border-color: white;")
         self.tb_lottery.setObjectName("tb_lottery")
 
         self.retranslateUi(Form_bet)

@@ -211,9 +211,12 @@ class BetWindow(QDialog, F_bet):
 
     def resetAll(self):
         # ScrollBar
-        self.tb_lottery.verticalScrollBar().setStyleSheet("background-color: rgba(12, 12, 12, 80);\n"
-                                                          "background-image: url();\n"
-                                                          "color: rgb(255, 255, 255);\n")
+        self.tb_lottery.verticalScrollBar().setStyleSheet(
+            "QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {background: rgba(12, 12, 12, 80);}\n"
+            "QScrollBar::handle:vertical{background: rgba(120, 120, 120, 80); border-radius:8px;}\n"
+            "QScrollBar::handle:vertical:hover{background: rgba(150, 150, 150, 80); border-radius:8px;}\n"
+            "QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {border:none;}\n"
+            "QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {border:none;}")
         # 時時彩
         self.v_cqssc.hide()
         self.v_jsssc.hide()

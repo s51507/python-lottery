@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82e24e04-3995-4965-aab6-428c88606231" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AutoBet.spec" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lotteryUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/lotteryUI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lotteryGame.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lotteryGame.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/login.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +72,7 @@
         <entry file="file://$PROJECT_DIR$/src/lotteryGame.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="446">
-              <caret line="159" column="20" lean-forward="true" selection-start-line="159" selection-start-column="20" selection-end-line="159" selection-end-column="20" />
+              <caret line="159" column="20" selection-start-line="159" selection-start-column="20" selection-end-line="159" selection-end-column="20" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
               </folding>
@@ -89,7 +84,7 @@
         <entry file="file://$PROJECT_DIR$/src/lotteryGameSet.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="629">
-              <caret line="1140" lean-forward="true" selection-start-line="1140" selection-end-line="1140" />
+              <caret line="1140" selection-start-line="1140" selection-end-line="1140" />
               <folding>
                 <element signature="e#1261#10724#0" />
                 <element signature="e#10752#21921#0" />
@@ -133,8 +128,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="202">
-                <caret line="47" column="24" lean-forward="true" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
+              <first_editor relative-caret-position="423">
+                <caret line="45" column="7" lean-forward="true" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
               </first_editor>
               <second_editor />
             </state>
@@ -461,12 +456,12 @@
       <workItem from="1561337714519" duration="13720000" />
       <workItem from="1561424669541" duration="4474000" />
       <workItem from="1561513780932" duration="3246000" />
-      <workItem from="1561596194911" duration="1426000" />
+      <workItem from="1561596194911" duration="1731000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="271070000" />
+    <option name="totallyTimeSpent" value="271375000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -492,10 +487,10 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4989339" weight="0.3286334" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.4520256" visible="true" weight="0.2646421" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4520256" weight="0.2646421" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5479744" side_tool="true" visible="true" weight="0.2646421" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.46002132" weight="0.32321042" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5405117" side_tool="true" visible="true" weight="0.32321042" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.45948827" visible="true" weight="0.32321042" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49520257" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -774,7 +769,7 @@
     <entry file="file://$PROJECT_DIR$/src/lotteryGameSet.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
-          <caret line="1140" lean-forward="true" selection-start-line="1140" selection-end-line="1140" />
+          <caret line="1140" selection-start-line="1140" selection-end-line="1140" />
           <folding>
             <element signature="e#1261#10724#0" />
             <element signature="e#10752#21921#0" />
@@ -804,7 +799,7 @@
     <entry file="file://$PROJECT_DIR$/src/lotteryGame.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="446">
-          <caret line="159" column="20" lean-forward="true" selection-start-line="159" selection-start-column="20" selection-end-line="159" selection-end-column="20" />
+          <caret line="159" column="20" selection-start-line="159" selection-start-column="20" selection-end-line="159" selection-end-column="20" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
           </folding>
@@ -814,8 +809,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="202">
-            <caret line="47" column="24" lean-forward="true" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
+          <first_editor relative-caret-position="423">
+            <caret line="45" column="7" lean-forward="true" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
           </first_editor>
           <second_editor />
         </state>

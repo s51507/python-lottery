@@ -44,7 +44,10 @@ PK10　 ：北京賽車(bjpk10)、88賽馬(horse88)、極速賽車(jssc)、威�
 ## Update
 ### Wap端 全彩種完成灑花 ｡:.ﾟヽ(*´∀`)ﾉﾟ.:｡
 ```bash
-v5.3.00 - fix
+v5.3.00 - add
+          requirements.txt (感謝Bless大大)
+          
+          fix
           ScrollBar換顏色了啦
           廣東11選5方法名稱沒改到嘻嘻
 

@@ -147,7 +147,7 @@ def hksix(gameid):
 
 
 # 廣東11選5 1~2
-def hksix(gameid):
+def gdsyxw(gameid):
     game = gl('廣東11選5', 'syxw_' + gameid)
     for now in game:
         bet('gdsyxw', now)

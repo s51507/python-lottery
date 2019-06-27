@@ -12,6 +12,7 @@ class LoginWindow(QDialog, F_login):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
+        self.setFocus()
         self.btn_login.clicked.connect(self.sayGoodBye)
 
     def sayGoodBye(self):
@@ -209,6 +210,10 @@ class BetWindow(QDialog, F_bet):
             hksix('3')
 
     def resetAll(self):
+        # ScrollBar
+        self.tb_lottery.verticalScrollBar().setStyleSheet("background-color: rgba(12, 12, 12, 80);\n"
+                                                          "background-image: url();\n"
+                                                          "color: rgb(255, 255, 255);\n")
         # 時時彩
         self.v_cqssc.hide()
         self.v_jsssc.hide()

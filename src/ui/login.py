@@ -40,7 +40,7 @@ class Ui_Form_login(object):
         self.input_pwd.setAlignment(QtCore.Qt.AlignCenter)
         self.input_pwd.setObjectName("input_pwd")
         self.btn_login = QtWidgets.QPushButton(Form_login)
-        self.btn_login.setGeometry(QtCore.QRect(390, 310, 131, 21))
+        self.btn_login.setGeometry(QtCore.QRect(380, 310, 131, 21))
         self.btn_login.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.btn_login.setStyleSheet("border-image: url();\n"
 "background-color: rgba(255, 255, 255, 50);\n"

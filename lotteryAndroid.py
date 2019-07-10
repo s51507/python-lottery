@@ -1,3 +1,8 @@
+from appium import webdriver
+from selenium.webdriver.support.ui import WebDriverWait
+from appium.webdriver.common.touch_action import TouchAction
+from time import sleep
+
 server = 'http://localhost:4723/wd/hub'
 desired_caps = {
     'platformName': 'Android',
@@ -5,11 +10,6 @@ desired_caps = {
     'appPackage': 'com.qygame.lottery',
     'appActivity': '.ui.main.MainActivity'
 }
-
-from appium import webdriver
-from selenium.webdriver.support.ui import WebDriverWait
-from appium.webdriver.common.touch_action import TouchAction
-from time import sleep
 
 driver = webdriver.Remote(server, desired_caps)
 

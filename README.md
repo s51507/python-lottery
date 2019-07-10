@@ -44,6 +44,14 @@ PK10　 ：北京賽車(bjpk10)、88賽馬(horse88)、極速賽車(jssc)、威�
 ## Update
 ### Wap端 全彩種完成灑花 ｡:.ﾟヽ(*´∀`)ﾉﾟ.:｡
 ```bash
+v6.0.00 - add
+          新增IOS自動化，但是轉python之後還是需要MAC才能用，拉基哀鳳
+          登入loading動畫
+          
+          optimization
+          改成開啟直接到首頁惹
+          
+
 v5.4.00 - 優化ScrollBar，還改了外觀
           textBrowser外框拿掉，點選不會再有藍框了，醜死
 

@@ -50,6 +50,14 @@ class Ui_Form_login(object):
         self.btn_login.setDefault(False)
         self.btn_login.setFlat(False)
         self.btn_login.setObjectName("btn_login")
+        self.lb_login = QtWidgets.QLabel(Form_login)
+        self.lb_login.setGeometry(QtCore.QRect(320, 50, 271, 471))
+        self.lb_login.setStyleSheet("border-image: url();\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+"border: none;\n"
+"color: rgba(0 , 0 , 0, 120);")
+        self.lb_login.setText("")
+        self.lb_login.setObjectName("lb_login")
 
         self.retranslateUi(Form_login)
         QtCore.QMetaObject.connectSlotsByName(Form_login)

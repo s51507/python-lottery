@@ -1,13 +1,13 @@
 import sys
 from PyQt5.QtWidgets import QDialog, QApplication
 from PyQt5.QtGui import QMovie
+from PyQt5.QtCore import QTimer
 from src.ui.login import Ui_Form_login as F_login
 from src.ui.bet import Ui_Form_bet as F_bet
 from src.lottertBet import login
 from src.lotteryGame import *
 from src.ui.log import LogStream as ls
 import threading
-from time import sleep
 
 
 class LoginWindow(QDialog, F_login):
@@ -26,9 +26,7 @@ class LoginWindow(QDialog, F_login):
         self.input_user.hide()
         self.input_pwd.hide()
         threading.Thread(target=login, args=(self.input_user.text(), self.input_pwd.text(),)).start()
-        # login(self.input_user.text(), self.input_pwd.text())
-        threading.Timer(3.5, self.close).start()
-        # self.close()
+        threading.Timer(3.0, self.close).start()
 
 
 class BetWindow(QDialog, F_bet):
@@ -308,14 +306,15 @@ class BetWindow(QDialog, F_bet):
 app = QApplication(sys.argv)
 w_login = LoginWindow()
 w_bet = BetWindow()
+timer = QTimer()
+
+
+def wBetShow():
+    timer.stop()
+    w_bet.show()
+
+
 w_login.show()
-# threading.Timer(1.5, w_login.show).start()
-
-def test1():
-    # threading.Thread(target=w_bet.show).start()
-    threading.Timer(3.5, w_bet.show).start()
-
-
-w_login.btn_login.clicked.connect(test1)
-# w_login.btn_login.clicked.connect(lambda: w_bet.show())
+w_login.btn_login.clicked.connect(lambda: timer.start(2500))
+timer.timeout.connect(wBetShow)
 sys.exit(app.exec_())

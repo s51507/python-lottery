@@ -6,13 +6,9 @@ rb40 = 175
 rb30 = 130
 rb20 = 85
 rb10 = 40
-dollar = '#app > div.v-dialog__content.v-dialog__content--active > div > div > div.pa-3.v-card.v-sheet.theme--light > div.flex-space-between > div.button-group_main_1nnmi > div > button:nth-child(1)'
-dime = '#app > div.v-dialog__content.v-dialog__content--active > div > div > div.pa-3.v-card.v-sheet.theme--light > div.flex-space-between > div.button-group_main_1nnmi > div > button:nth-child(2)'
-cent = '#app > div.v-dialog__content.v-dialog__content--active > div > div > div.pa-3.v-card.v-sheet.theme--light > div.flex-space-between > div.button-group_main_1nnmi > div > button:nth-child(3)'
-
-dollar_six = '#app > div.v-dialog__content.v-dialog__content--active > div > div > div.pa-3.v-card.v-sheet.theme--light > div > div.button-group_main_1nnmi > div > button:nth-child(1)'
-dime_six = '#app > div.v-dialog__content.v-dialog__content--active > div > div > div.pa-3.v-card.v-sheet.theme--light > div > div.button-group_main_1nnmi > div > button:nth-child(2)'
-cent_six = '#app > div.v-dialog__content.v-dialog__content--active > div > div > div.pa-3.v-card.v-sheet.theme--light > div > div.button-group_main_1nnmi > div > button:nth-child(3)'
+dollar = '#app > div.v-dialog__content.v-dialog__content--active > div > div > div.pa-3.v-card.v-sheet.theme--light > div.flex-space-between > div.button-group_main_2m02p > div > button:nth-child(1)'
+dime = '#app > div.v-dialog__content.v-dialog__content--active > div > div > div.pa-3.v-card.v-sheet.theme--light > div.flex-space-between > div.button-group_main_2m02p > div > button:nth-child(2)'
+cent = '#app > div.v-dialog__content.v-dialog__content--active > div > div > div.pa-3.v-card.v-sheet.theme--light > div.flex-space-between > div.button-group_main_2m02p > div > button:nth-child(3)'
 
 
 def ssc_1(gameName):
@@ -2283,7 +2279,7 @@ def six_1(gameName):
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(1)'
             ],
-            dollar_six
+            dollar
         ],
         [
             '02.' + gameName + '-特碼-B：2_元',
@@ -2291,7 +2287,7 @@ def six_1(gameName):
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(2)'
             ],
-            dollar_six
+            dollar
         ],
         [
             '03.' + gameName + '-正碼-A：3_元',
@@ -2299,7 +2295,7 @@ def six_1(gameName):
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(3)'
             ],
-            dollar_six
+            dollar
         ],
         [
             '04.' + gameName + '-正碼-B：4_元',
@@ -2307,7 +2303,7 @@ def six_1(gameName):
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(4)'
             ],
-            dollar_six
+            dollar
         ],
         [
             '05.' + gameName + '-正特碼-正一特：5_元',
@@ -2315,7 +2311,7 @@ def six_1(gameName):
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(5)'
             ],
-            dollar_six
+            dollar
         ],
         [
             '06.' + gameName + '-正特碼-正二特：6_元',
@@ -2323,7 +2319,7 @@ def six_1(gameName):
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > button:nth-child(1)'
             ],
-            dollar_six
+            dollar
         ],
         [
             '07.' + gameName + '-正特碼-正三特：7_元',
@@ -2331,7 +2327,7 @@ def six_1(gameName):
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > button:nth-child(2)'
             ],
-            dollar_six
+            dollar
         ],
         [
             '08.' + gameName + '-正特碼-正四特：8_元',
@@ -2339,7 +2335,7 @@ def six_1(gameName):
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > button:nth-child(3)'
             ],
-            dollar_six
+            dollar
         ],
         [
             '09.' + gameName + '-正特碼-正五特：9_元',
@@ -2347,7 +2343,7 @@ def six_1(gameName):
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > button:nth-child(4)'
             ],
-            dollar_six
+            dollar
         ],
         [
             '10.' + gameName + '-正特碼-正六特：10_元',
@@ -2355,7 +2351,7 @@ def six_1(gameName):
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > button:nth-child(5)'
             ],
-            dollar_six
+            dollar
         ],
         [
             '11.' + gameName + '-正碼1至6-正一碼：大_元',
@@ -2363,7 +2359,7 @@ def six_1(gameName):
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(1)'
             ],
-            dollar_six
+            dollar
         ],
         [
             '12.' + gameName + '-正碼1至6-正二碼：小_元',
@@ -2371,7 +2367,7 @@ def six_1(gameName):
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(2)'
             ],
-            dollar_six
+            dollar
         ],
         [
             '13.' + gameName + '-正碼1至6-正三碼：單_元',
@@ -2379,7 +2375,7 @@ def six_1(gameName):
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(3)'
             ],
-            dollar_six
+            dollar
         ],
         [
             '14.' + gameName + '-正碼1至6-正四碼：雙_元',
@@ -2387,7 +2383,7 @@ def six_1(gameName):
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(4)'
             ],
-            dollar_six
+            dollar
         ],
         [
             '15.' + gameName + '-正碼1至6-正五碼：紅波_元',
@@ -2395,7 +2391,7 @@ def six_1(gameName):
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(5)'
             ],
-            dollar_six
+            dollar
         ],
         [
             '16.' + gameName + '-正碼1至6-正六碼：藍波_元',
@@ -2403,7 +2399,7 @@ def six_1(gameName):
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > button:nth-child(1)'
             ],
-            dollar_six
+            dollar
         ]
     ]
 
@@ -2411,54 +2407,54 @@ def six_1(gameName):
 def six_2(gameName):
     return [
         [
-            '17.' + gameName + '-連碼-三全中：7,13,19_角',
+            '17.' + gameName + '-連碼-三全中：7,13,19_元',
             '356',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > button:nth-child(2)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(3) > button:nth-child(3)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(4) > button:nth-child(4)'
             ],
-            dime_six
+            dollar
         ],
         [
-            '18.' + gameName + '-連碼-三中二：2,8,14_角',
+            '18.' + gameName + '-連碼-三中二：2,8,14_元',
             '357',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div > div:nth-child(1) > button:nth-child(2)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div > div:nth-child(2) > button:nth-child(3)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div > div:nth-child(3) > button:nth-child(4)'
             ],
-            dime_six
+            dollar
         ],
         [
-            '19.' + gameName + '-連碼-二全中：27,33_角',
+            '19.' + gameName + '-連碼-二全中：27,33_元',
             '358',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(6) > button:nth-child(2)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(7) > button:nth-child(3)'
             ],
-            dime_six
+            dollar
         ],
         [
-            '20.' + gameName + '-連碼-二中特：39,43_角',
+            '20.' + gameName + '-連碼-二中特：39,43_元',
             '359',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div > div:nth-child(8) > button:nth-child(4)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div > div:nth-child(9) > button:nth-child(3)'
             ],
-            dime_six
+            dollar
         ],
         [
-            '21.' + gameName + '-連碼-特串：15,30_角',
+            '21.' + gameName + '-連碼-特串：15,30_元',
             '360',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(3) > button:nth-child(5)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(6) > button:nth-child(5)'
             ],
-            dime_six
+            dollar
         ],
         [
-            '22.' + gameName + '-連碼-四中一：7,19,28,40_角',
+            '22.' + gameName + '-連碼-四中一：7,19,28,40_元',
             '361',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > button:nth-child(2)',
@@ -2466,31 +2462,31 @@ def six_2(gameName):
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(6) > button:nth-child(3)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(8) > button:nth-child(5)'
             ],
-            dime_six
+            dollar
         ],
         [
-            '23.' + gameName + '-半波：藍雙_角',
+            '23.' + gameName + '-半波：藍雙_元',
             '362',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > button:nth-child(5)'
             ],
-            dime_six
+            dollar
         ],
         [
-            '24.' + gameName + '-一肖/尾數：猴_角',
+            '24.' + gameName + '-一肖/尾數：猴_元',
             '363',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > button:nth-child(4)'
             ],
-            dime_six
+            dollar
         ],
         [
-            '25.' + gameName + '-特肖：豬_角',
+            '25.' + gameName + '-特肖：豬_元',
             '364',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(3) > button:nth-child(4)'
             ],
-            dime_six
+            dollar
         ]
     ]
 
@@ -2498,26 +2494,26 @@ def six_2(gameName):
 def six_3(gameName):
     return [
         [
-            '26.' + gameName + '-合肖-二肖：鼠牛_分',
+            '26.' + gameName + '-合肖-二肖：鼠牛_元',
             '366',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(1)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(2)'
             ],
-            cent_six
+            dollar
         ],
         [
-            '27.' + gameName + '-合肖-三肖：鼠牛虎_分',
+            '27.' + gameName + '-合肖-三肖：鼠牛虎_元',
             '367',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(1)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(2)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(3)'
             ],
-            cent_six
+            dollar
         ],
         [
-            '28.' + gameName + '-合肖-四肖：鼠牛虎兔_分',
+            '28.' + gameName + '-合肖-四肖：鼠牛虎兔_元',
             '368',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(1)',
@@ -2525,10 +2521,10 @@ def six_3(gameName):
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(3)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(4)'
             ],
-            cent_six
+            dollar
         ],
         [
-            '29.' + gameName + '-合肖-五肖：鼠牛虎兔龍_分',
+            '29.' + gameName + '-合肖-五肖：鼠牛虎兔龍_元',
             '369',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(1)',
@@ -2537,10 +2533,10 @@ def six_3(gameName):
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(4)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > button:nth-child(1)'
             ],
-            cent_six
+            dollar
         ],
         [
-            '30.' + gameName + '-合肖-六肖：鼠牛虎兔龍蛇_分',
+            '30.' + gameName + '-合肖-六肖：鼠牛虎兔龍蛇_元',
             '370',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(1)',
@@ -2550,10 +2546,10 @@ def six_3(gameName):
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > button:nth-child(1)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > button:nth-child(2)'
             ],
-            cent_six
+            dollar
         ],
         [
-            '31.' + gameName + '-合肖-七肖：鼠牛虎兔龍蛇馬_分',
+            '31.' + gameName + '-合肖-七肖：鼠牛虎兔龍蛇馬_元',
             '371',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(1)',
@@ -2564,10 +2560,10 @@ def six_3(gameName):
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > button:nth-child(2)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > button:nth-child(3)'
             ],
-            cent_six
+            dollar
         ],
         [
-            '32.' + gameName + '-合肖-八肖：鼠牛虎兔龍蛇馬羊_分',
+            '32.' + gameName + '-合肖-八肖：鼠牛虎兔龍蛇馬羊_元',
             '372',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(1)',
@@ -2579,10 +2575,10 @@ def six_3(gameName):
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > button:nth-child(3)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > button:nth-child(4)'
             ],
-            cent_six
+            dollar
         ],
         [
-            '33.' + gameName + '-合肖-九肖：鼠牛虎兔龍蛇馬羊猴_分',
+            '33.' + gameName + '-合肖-九肖：鼠牛虎兔龍蛇馬羊猴_元',
             '373',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(1)',
@@ -2595,10 +2591,10 @@ def six_3(gameName):
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > button:nth-child(4)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(3) > button:nth-child(1)'
             ],
-            cent_six
+            dollar
         ],
         [
-            '34.' + gameName + '-合肖-十肖：鼠牛虎兔龍蛇馬羊猴雞_分',
+            '34.' + gameName + '-合肖-十肖：鼠牛虎兔龍蛇馬羊猴雞_元',
             '374',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(1)',
@@ -2612,10 +2608,10 @@ def six_3(gameName):
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(3) > button:nth-child(1)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(3) > button:nth-child(2)'
             ],
-            cent_six
+            dollar
         ],
         [
-            '35.' + gameName + '-合肖-十一肖：鼠牛虎兔龍蛇馬羊猴雞狗_分',
+            '35.' + gameName + '-合肖-十一肖：鼠牛虎兔龍蛇馬羊猴雞狗_元',
             '375',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(1)',
@@ -2630,29 +2626,29 @@ def six_3(gameName):
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(3) > button:nth-child(2)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(3) > button:nth-child(3)'
             ],
-            cent_six
+            dollar
         ],
         [
-            '36.' + gameName + '-連肖-二肖連中：鼠牛_分',
+            '36.' + gameName + '-連肖-二肖連中：鼠牛_元',
             '377',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(1)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(2)'
             ],
-            cent_six
+            dollar
         ],
         [
-            '37.' + gameName + '-連肖-三肖連中：鼠牛虎_分',
+            '37.' + gameName + '-連肖-三肖連中：鼠牛虎_元',
             '378',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(1)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(2)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(3)'
             ],
-            cent_six
+            dollar
         ],
         [
-            '38.' + gameName + '-連肖-四肖連中：鼠牛虎兔_分',
+            '38.' + gameName + '-連肖-四肖連中：鼠牛虎兔_元',
             '379',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(1)',
@@ -2660,10 +2656,10 @@ def six_3(gameName):
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(3)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(4)'
             ],
-            cent_six
+            dollar
         ],
         [
-            '39.' + gameName + '-連肖-五肖連中：鼠牛虎兔龍_分',
+            '39.' + gameName + '-連肖-五肖連中：鼠牛虎兔龍_元',
             '380',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(1)',
@@ -2672,29 +2668,29 @@ def six_3(gameName):
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(4)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > button:nth-child(1)'
             ],
-            cent_six
+            dollar
         ],
         [
-            '40.' + gameName + '-連肖-二肖連不中：鼠牛_分',
+            '40.' + gameName + '-連肖-二肖連不中：鼠牛_元',
             '381',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(1)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(2)'
             ],
-            cent_six
+            dollar
         ],
         [
-            '41.' + gameName + '-連肖-三肖連不中：鼠牛虎_分',
+            '41.' + gameName + '-連肖-三肖連不中：鼠牛虎_元',
             '382',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(1)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(2)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(3)'
             ],
-            cent_six
+            dollar
         ],
         [
-            '42.' + gameName + '-連肖-四肖連不中：鼠牛虎兔_分',
+            '42.' + gameName + '-連肖-四肖連不中：鼠牛虎兔_元',
             '383',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(1)',
@@ -2702,29 +2698,29 @@ def six_3(gameName):
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(3)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(4)'
             ],
-            cent_six
+            dollar
         ],
         [
-            '43.' + gameName + '-尾數連-二尾連中：0,1_分',
+            '43.' + gameName + '-尾數連-二尾連中：0,1_元',
             '385',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(1)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(2)'
             ],
-            cent_six
+            dollar
         ],
         [
-            '44.' + gameName + '-尾數連-三尾連中：2,3,4_分',
+            '44.' + gameName + '-尾數連-三尾連中：2,3,4_元',
             '386',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(3)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(4)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(5)'
             ],
-            cent_six
+            dollar
         ],
         [
-            '45.' + gameName + '-尾數連-四尾連中：5,6,7,8_分',
+            '45.' + gameName + '-尾數連-四尾連中：5,6,7,8_元',
             '387',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > button:nth-child(1)',
@@ -2732,29 +2728,29 @@ def six_3(gameName):
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > button:nth-child(3)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > button:nth-child(4)'
             ],
-            cent_six
+            dollar
         ],
         [
-            '46.' + gameName + '-尾數連-二尾連不中：0,9_分',
+            '46.' + gameName + '-尾數連-二尾連不中：0,9_元',
             '388',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > button:nth-child(5)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(1)'
             ],
-            cent_six
+            dollar
         ],
         [
-            '47.' + gameName + '-尾數連-三尾連不中：1,2,3_分',
+            '47.' + gameName + '-尾數連-三尾連不中：1,2,3_元',
             '389',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(2)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(3)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(4)'
             ],
-            cent_six
+            dollar
         ],
         [
-            '48.' + gameName + '-尾數連-四尾連不中：4,5,6,7_分',
+            '48.' + gameName + '-尾數連-四尾連不中：4,5,6,7_元',
             '390',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(5)',
@@ -2762,10 +2758,10 @@ def six_3(gameName):
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > button:nth-child(2)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > button:nth-child(3)'
             ],
-            cent_six
+            dollar
         ],
         [
-            '49.' + gameName + '-全不中-五不中：1,2,3,4,5_分',
+            '49.' + gameName + '-全不中-五不中：1,2,3,4,5_元',
             '392',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(1)',
@@ -2774,10 +2770,10 @@ def six_3(gameName):
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(4)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(5)'
             ],
-            cent_six
+            dollar
         ],
         [
-            '50.' + gameName + '-全不中-六不中：6,7,8,9,10,11_分',
+            '50.' + gameName + '-全不中-六不中：6,7,8,9,10,11_元',
             '393',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > button:nth-child(1)',
@@ -2787,10 +2783,10 @@ def six_3(gameName):
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > button:nth-child(5)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(3) > button:nth-child(1)'
             ],
-            cent_six
+            dollar
         ],
         [
-            '51.' + gameName + '-全不中-七不中：12~18_分',
+            '51.' + gameName + '-全不中-七不中：12~18_元',
             '394',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(3) > button:nth-child(2)',
@@ -2801,10 +2797,10 @@ def six_3(gameName):
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(4) > button:nth-child(2)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(4) > button:nth-child(3)'
             ],
-            cent_six
+            dollar
         ],
         [
-            '52.' + gameName + '-全不中-八不中：19~26_分',
+            '52.' + gameName + '-全不中-八不中：19~26_元',
             '395',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(4) > button:nth-child(4)',
@@ -2816,10 +2812,10 @@ def six_3(gameName):
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(5) > button:nth-child(5)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(6) > button:nth-child(1)'
             ],
-            cent_six
+            dollar
         ],
         [
-            '53.' + gameName + '-全不中-九不中：27~35_分',
+            '53.' + gameName + '-全不中-九不中：27~35_元',
             '396',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(6) > button:nth-child(2)',
@@ -2832,10 +2828,10 @@ def six_3(gameName):
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(7) > button:nth-child(4)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(7) > button:nth-child(5)'
             ],
-            cent_six
+            dollar
         ],
         [
-            '54.' + gameName + '-全不中-十不中：36~45_分',
+            '54.' + gameName + '-全不中-十不中：36~45_元',
             '397',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(8) > button:nth-child(1)',
@@ -2849,10 +2845,10 @@ def six_3(gameName):
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(9) > button:nth-child(4)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(9) > button:nth-child(5)'
             ],
-            cent_six
+            dollar
         ],
         [
-            '55.' + gameName + '-全不中-十一不中：1,6,11,16,21,26,31,36,41,46,49_分',
+            '55.' + gameName + '-全不中-十一不中：1,6,11,16,21,26,31,36,41,46,49_元',
             '398',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(1)',
@@ -2867,10 +2863,10 @@ def six_3(gameName):
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(10) > button:nth-child(1)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(10) > button:nth-child(4)'
             ],
-            cent_six
+            dollar
         ],
         [
-            '56.' + gameName + '-全不中-十二不中：3,4,8,9,13,18,23,28,33,38,43,48_分',
+            '56.' + gameName + '-全不中-十二不中：3,4,8,9,13,18,23,28,33,38,43,48_元',
             '399',
             [
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(3)',
@@ -2886,7 +2882,7 @@ def six_3(gameName):
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(4)',
                 '#bet-area-component-renderer > div > div:nth-child(2) > div:nth-child(2) > button:nth-child(4)'
             ],
-            cent_six
+            dollar
         ]
     ]
 

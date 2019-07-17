@@ -5,17 +5,17 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 from time import sleep
 
-web = webdriver.Chrome()
+web = webdriver.Chrome(r".\\data\\chromedriver.exe")
 host = 'http://www.lottery2.lianfa.co'
-dot = '#app > div.v-dialog__content.v-dialog__content--active > div > div > div.pa-3.v-card.v-sheet.theme--light > div.ig-betting-slider_main_3k2wQ > div > div > div > div.vue-slider-dot > div.vue-slider-dot-handle'
+dot = '#app > div.v-dialog__content.v-dialog__content--active > div > div > div.pa-3.v-card.v-sheet.theme--light > div.ig-betting-slider_main_36re8 > div > div > div > div.vue-slider-dot > div'
 
-rb78 = 330
-rb70 = 296
-rb60 = 253
-rb50 = 210
-rb40 = 167
-rb30 = 125
-rb20 = 83
+rb78 = 345
+rb70 = 310
+rb60 = 265
+rb50 = 220
+rb40 = 175
+rb30 = 130
+rb20 = 85
 rb10 = 40
 
 
@@ -59,7 +59,7 @@ def login():
     web.set_window_size(450, 1045)
     click('button[value="info"]')
     sleep(0.5)
-    web.find_element_by_css_selector('input[placeholder="请输入用户名"]').send_keys('ian001')
+    web.find_element_by_css_selector('input[placeholder="请输入用户名"]').send_keys('ian002')
     web.find_element_by_css_selector('input[placeholder="请输入密码"').send_keys('qqq111')
     click('#login > div.flex-layout-column.login-panel > div.login-btn > button')
     wait('#app > div > div > div > div:nth-child(6)')
@@ -75,16 +75,23 @@ def bet():
     web.get(host + '/#/lottery/jsk3?lotteryCategoryID=254')
     wait('#bet-area-component-renderer')
     wait(
-        '#app > div.application--wrap > div > div.betting-bottom-bar_main_1nOle > div.betting-bottom-bar_container_v7kMX')
+        '#app > div.application--wrap > div > div.betting-bottom-bar_main_3OzhA > div.betting-bottom-bar_container_2FzNa')
     click('#bet-area-component-renderer > div > div:nth-child(2) > div > button')
     click(
-        '#app > div.application--wrap > div > div.betting-bottom-bar_main_1nOle > div.betting-bottom-bar_container_v7kMX > button.v-btn.theme--light.ig-btn_main_2mP9w.betting-bottom-bar_betting_1qX5B')
+        '#app > div.application--wrap > div > div.betting-bottom-bar_main_3OzhA > div.betting-bottom-bar_container_2FzNa > button.v-btn.theme--light.ig-btn_main_2mP9w.betting-bottom-bar_betting_3yJDP')
     wait('.bottom-bar--active')
     sleep(0.5)
-    ActionChains(web).drag_and_drop_by_offset(web.find_element_by_css_selector(dot), rb78, 0).perform()
+    ActionChains(web).drag_and_drop_by_offset(web.find_element_by_css_selector(dot), rb70, 0).perform()
+    print('返點：' + getText(
+        '#app > div.v-dialog__content.v-dialog__content--active > div > div > div.pa-3.v-card.v-sheet.theme--light > div.ig-betting-slider_main_36re8 > span:nth-child(1)'))
+    print('賠率：' + getText(
+        '#app > div.v-dialog__content.v-dialog__content--active > div > div > div.pa-3.v-card.v-sheet.theme--light > div.ig-betting-slider_main_36re8 > span:nth-child(3)'))
+    print('注數：' + getText(
+        '#app > div.application--wrap > div > div.betting-bottom-bar_main_3OzhA > div.betting-bottom-bar_container_2FzNa.bottom-bar--active > div > span.mx-2 > span'))
+    print('總金額：' + getText(
+        '#app > div.application--wrap > div > div.betting-bottom-bar_main_3OzhA > div.betting-bottom-bar_container_2FzNa.bottom-bar--active > div > span.betting-bottom-bar_large_1PhrE > span.ig-primary'))
     return
 
 
-print(input('RRRR:')+'aaa')
-#login()
-#bet()
+login()
+bet()

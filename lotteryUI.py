@@ -1,9 +1,10 @@
 import sys
-from PyQt5.QtWidgets import QDialog, QApplication
-from PyQt5.QtGui import QMovie
-from PyQt5.QtCore import QTimer
+from PyQt5.QtWidgets import QDialog, QApplication, QGraphicsDropShadowEffect
+from PyQt5.QtGui import QMovie, QCursor
+from PyQt5.QtCore import QTimer, Qt
 from src.ui.login import Ui_Form_login as F_login
 from src.ui.bet import Ui_Form_bet as F_bet
+from src.ui.check import Ui_Form_check as F_check
 from src.lottertBet import login
 from src.lotteryGame import *
 from src.ui.log import LogStream as ls
@@ -29,6 +30,45 @@ class LoginWindow(QDialog, F_login):
         threading.Timer(3.0, self.close).start()
 
 
+class CheckWindow(QDialog, F_check):
+    def __init__(self, parent=None):
+        super(CheckWindow, self).__init__(parent)
+        self.setupUi(self)
+        self.setFocus()
+        self.setWindowFlags(Qt.FramelessWindowHint)
+        self.setAttribute(Qt.WA_TranslucentBackground)
+        shadow = QGraphicsDropShadowEffect(blurRadius=100, xOffset=0, yOffset=0)
+        self.bg.setGraphicsEffect(shadow)
+        self.btn_fixnum.clicked.connect(self.fixNum)
+        self.btn_rannum.clicked.connect(self.ranNum)
+        self.btn_cancel.clicked.connect(self.close)
+        nowGame = ''
+
+    def fixNum(self):
+        w_bet.bet(self.nowGame)
+        self.close()
+
+    def ranNum(self):
+        print(self.nowGame + '機選尚未完成  _(¦3」∠)_')
+        self.close()
+
+    def mousePressEvent(self, event):
+        if event.button() == Qt.LeftButton:
+            self.m_drag = True
+            self.m_DragPosition = event.globalPos() - self.pos()
+            event.accept()
+            self.setCursor(QCursor(Qt.ArrowCursor))
+
+    def mouseMoveEvent(self, QMouseEvent):
+        if Qt.LeftButton and self.m_drag:
+            self.move(QMouseEvent.globalPos() - self.m_DragPosition)
+            QMouseEvent.accept()
+
+    def mouseReleaseEvent(self, QMouseEvent):
+        self.m_drag = False
+        self.setCursor(QCursor(Qt.ArrowCursor))
+
+
 class BetWindow(QDialog, F_bet):
     def __init__(self):
         super().__init__()
@@ -44,66 +84,66 @@ class BetWindow(QDialog, F_bet):
         self.btn_txffc.clicked.connect(lambda: self.vShow('txffc'))
         self.btn_xjssc.clicked.connect(lambda: self.vShow('xjssc'))
 
-        self.btn_cqssc_1.clicked.connect(lambda: self.bet('cqssc_1'))
-        self.btn_cqssc_2.clicked.connect(lambda: self.bet('cqssc_2'))
-        self.btn_cqssc_3.clicked.connect(lambda: self.bet('cqssc_3'))
+        self.btn_cqssc_1.clicked.connect(lambda: self.check('cqssc_1'))
+        self.btn_cqssc_2.clicked.connect(lambda: self.check('cqssc_2'))
+        self.btn_cqssc_3.clicked.connect(lambda: self.check('cqssc_3'))
 
-        self.btn_jsssc_1.clicked.connect(lambda: self.bet('jsssc_1'))
-        self.btn_jsssc_2.clicked.connect(lambda: self.bet('jsssc_2'))
-        self.btn_jsssc_3.clicked.connect(lambda: self.bet('jsssc_3'))
+        self.btn_jsssc_1.clicked.connect(lambda: self.check('jsssc_1'))
+        self.btn_jsssc_2.clicked.connect(lambda: self.check('jsssc_2'))
+        self.btn_jsssc_3.clicked.connect(lambda: self.check('jsssc_3'))
 
-        self.btn_lmssc_1.clicked.connect(lambda: self.bet('lmssc_1'))
-        self.btn_lmssc_2.clicked.connect(lambda: self.bet('lmssc_2'))
-        self.btn_lmssc_3.clicked.connect(lambda: self.bet('lmssc_3'))
+        self.btn_lmssc_1.clicked.connect(lambda: self.check('lmssc_1'))
+        self.btn_lmssc_2.clicked.connect(lambda: self.check('lmssc_2'))
+        self.btn_lmssc_3.clicked.connect(lambda: self.check('lmssc_3'))
 
-        self.btn_txffc_0.clicked.connect(lambda: self.bet('txffc_0'))
-        self.btn_txffc_1.clicked.connect(lambda: self.bet('txffc_1'))
-        self.btn_txffc_2.clicked.connect(lambda: self.bet('txffc_2'))
-        self.btn_txffc_3.clicked.connect(lambda: self.bet('txffc_3'))
-        self.btn_txffc_4.clicked.connect(lambda: self.bet('txffc_4'))
-        self.btn_txffc_5.clicked.connect(lambda: self.bet('txffc_5'))
-        self.btn_txffc_6.clicked.connect(lambda: self.bet('txffc_6'))
-        self.btn_txffc_7.clicked.connect(lambda: self.bet('txffc_7'))
+        self.btn_txffc_0.clicked.connect(lambda: self.check('txffc_0'))
+        self.btn_txffc_1.clicked.connect(lambda: self.check('txffc_1'))
+        self.btn_txffc_2.clicked.connect(lambda: self.check('txffc_2'))
+        self.btn_txffc_3.clicked.connect(lambda: self.check('txffc_3'))
+        self.btn_txffc_4.clicked.connect(lambda: self.check('txffc_4'))
+        self.btn_txffc_5.clicked.connect(lambda: self.check('txffc_5'))
+        self.btn_txffc_6.clicked.connect(lambda: self.check('txffc_6'))
+        self.btn_txffc_7.clicked.connect(lambda: self.check('txffc_7'))
 
-        self.btn_xjssc_1.clicked.connect(lambda: self.bet('xjssc_1'))
-        self.btn_xjssc_2.clicked.connect(lambda: self.bet('xjssc_2'))
-        self.btn_xjssc_3.clicked.connect(lambda: self.bet('xjssc_3'))
+        self.btn_xjssc_1.clicked.connect(lambda: self.check('xjssc_1'))
+        self.btn_xjssc_2.clicked.connect(lambda: self.check('xjssc_2'))
+        self.btn_xjssc_3.clicked.connect(lambda: self.check('xjssc_3'))
 
         # PK10
-        self.btn_bjpk10.clicked.connect(lambda: self.bet('bjpk10'))
-        self.btn_horse88.clicked.connect(lambda: self.bet('horse88'))
-        self.btn_jssc.clicked.connect(lambda: self.bet('jssc'))
-        self.btn_wnsst.clicked.connect(lambda: self.bet('wnsst'))
-        self.btn_xyft.clicked.connect(lambda: self.bet('xyft'))
+        self.btn_bjpk10.clicked.connect(lambda: self.check('bjpk10'))
+        self.btn_horse88.clicked.connect(lambda: self.check('horse88'))
+        self.btn_jssc.clicked.connect(lambda: self.check('jssc'))
+        self.btn_wnsst.clicked.connect(lambda: self.check('wnsst'))
+        self.btn_xyft.clicked.connect(lambda: self.check('xyft'))
 
         # 11選5
         self.btn_gdsyxw.clicked.connect(lambda: self.vShow('gdsyxw'))
 
-        self.btn_gdsyxw_1.clicked.connect(lambda: self.bet('gdsyxw_1'))
-        self.btn_gdsyxw_2.clicked.connect(lambda: self.bet('gdsyxw_2'))
+        self.btn_gdsyxw_1.clicked.connect(lambda: self.check('gdsyxw_1'))
+        self.btn_gdsyxw_2.clicked.connect(lambda: self.check('gdsyxw_2'))
 
         # 快樂十分
-        self.btn_gdklsf.clicked.connect(lambda: self.bet('gdklsf'))
-        self.btn_cqxync.clicked.connect(lambda: self.bet('cqxync'))
+        self.btn_gdklsf.clicked.connect(lambda: self.check('gdklsf'))
+        self.btn_cqxync.clicked.connect(lambda: self.check('cqxync'))
 
         # 快三
-        self.btn_jsk3.clicked.connect(lambda: self.bet('jsk3'))
-        self.btn_hbk3.clicked.connect(lambda: self.bet('hbk3'))
-        self.btn_jlk3.clicked.connect(lambda: self.bet('jlk3'))
+        self.btn_jsk3.clicked.connect(lambda: self.check('jsk3'))
+        self.btn_hbk3.clicked.connect(lambda: self.check('hbk3'))
+        self.btn_jlk3.clicked.connect(lambda: self.check('jlk3'))
 
         # 3D
-        self.btn_fc3d.clicked.connect(lambda: self.bet('fc3d'))
-        self.btn_pl3.clicked.connect(lambda: self.bet('pl3'))
+        self.btn_fc3d.clicked.connect(lambda: self.check('fc3d'))
+        self.btn_pl3.clicked.connect(lambda: self.check('pl3'))
 
         # 快樂8
-        self.btn_bjkl8.clicked.connect(lambda: self.bet('bjkl8'))
+        self.btn_bjkl8.clicked.connect(lambda: self.check('bjkl8'))
 
         # 六合彩
         self.btn_hksix.clicked.connect(lambda: self.vShow('hksix'))
 
-        self.btn_hksix_1.clicked.connect(lambda: self.bet('hksix_1'))
-        self.btn_hksix_2.clicked.connect(lambda: self.bet('hksix_2'))
-        self.btn_hksix_3.clicked.connect(lambda: self.bet('hksix_3'))
+        self.btn_hksix_1.clicked.connect(lambda: self.check('hksix_1'))
+        self.btn_hksix_2.clicked.connect(lambda: self.check('hksix_2'))
+        self.btn_hksix_3.clicked.connect(lambda: self.check('hksix_3'))
 
     def vShow(self, game):
         self.resetAll()
@@ -135,6 +175,10 @@ class BetWindow(QDialog, F_bet):
             self.btn_hksix.setStyleSheet(
                 'background-color: rgba(12, 12, 12, 80);\nbackground-image: url();\ncolor: rgb(255, 255, 12)')
             self.v_hksix.show()
+
+    def check(self, game):
+        w_check.nowGame = game
+        w_check.show()
 
     def bet(self, game):
         tBet = threading.Thread(target=self.betting, args=(game,))
@@ -303,18 +347,20 @@ class BetWindow(QDialog, F_bet):
         self.tb_lottery.append(msg)
 
 
-app = QApplication(sys.argv)
-w_login = LoginWindow()
-w_bet = BetWindow()
-timer = QTimer()
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    w_login = LoginWindow()
+    w_bet = BetWindow()
+    w_check = CheckWindow()
+    timer = QTimer()
 
 
-def wBetShow():
-    timer.stop()
-    w_bet.show()
+    def wBetShow():
+        timer.stop()
+        w_bet.show()
 
 
-w_login.show()
-w_login.btn_login.clicked.connect(lambda: timer.start(2500))
-timer.timeout.connect(wBetShow)
-sys.exit(app.exec_())
+    w_login.show()
+    w_login.btn_login.clicked.connect(lambda: timer.start(2500))
+    timer.timeout.connect(wBetShow)
+    sys.exit(app.exec_())

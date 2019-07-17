@@ -7,7 +7,7 @@ from time import sleep
 
 web = webdriver.Chrome(r".\\data\\chromedriver.exe")
 host = 'http://www.lottery2.lianfa.co'
-dot = '#app > div.v-dialog__content.v-dialog__content--active > div > div > div.pa-3.v-card.v-sheet.theme--light > div.ig-betting-slider_main_3k2wQ > div > div > div > div.vue-slider-dot > div.vue-slider-dot-handle'
+dot = '#app > div.v-dialog__content.v-dialog__content--active > div > div > div.pa-3.v-card.v-sheet.theme--light > div.ig-betting-slider_main_36re8 > div > div > div > div.vue-slider-dot > div'
 web.set_window_position(0, 0)
 web.set_window_size(450, 1045)
 web.get(host)
@@ -87,7 +87,7 @@ def bet(lottery, game, rb=1):
     web.get(host + '/#/lottery/' + lottery + '?lotteryCategoryID=' + Id)
     wait('#bet-area-component-renderer')
     wait(
-        '#app > div.application--wrap > div > div.betting-bottom-bar_main_1nOle > div.betting-bottom-bar_container_v7kMX')
+        '#app > div.application--wrap > div > div.betting-bottom-bar_main_3OzhA > div.betting-bottom-bar_container_2FzNa')
     try:
         web.find_element_by_css_selector('textarea').is_displayed()
         web.find_element_by_css_selector('textarea').send_keys(nums)
@@ -95,35 +95,34 @@ def bet(lottery, game, rb=1):
         for num in nums:
             click(num)
     click(
-        '#app > div.application--wrap > div > div.betting-bottom-bar_main_1nOle > div.betting-bottom-bar_container_v7kMX > button.v-btn.theme--light.ig-btn_main_2mP9w.betting-bottom-bar_betting_1qX5B')
-    wait('.bottom-bar--active')
+        '#app > div.application--wrap > div > div.betting-bottom-bar_main_3OzhA > div.betting-bottom-bar_container_2FzNa > button.v-btn.theme--light.ig-btn_main_2mP9w.betting-bottom-bar_betting_3yJDP')
     sleep(0.5)
     click(money)
     if rb == 1:
         ActionChains(web).drag_and_drop_by_offset(web.find_element_by_css_selector(dot), rebate, 0).perform()
         print('返點：' + getText(
-            '#app > div.v-dialog__content.v-dialog__content--active > div > div > div.pa-3.v-card.v-sheet.theme--light > div.ig-betting-slider_main_3k2wQ > span:nth-child(1)') + '\n' +
+            '#app > div.v-dialog__content.v-dialog__content--active > div > div > div.pa-3.v-card.v-sheet.theme--light > div.ig-betting-slider_main_36re8 > span:nth-child(1)') + '\n' +
               '賠率：' + getText(
-            '#app > div.v-dialog__content.v-dialog__content--active > div > div > div.pa-3.v-card.v-sheet.theme--light > div.ig-betting-slider_main_3k2wQ > span:nth-child(3)') + '\n' +
+            '#app > div.v-dialog__content.v-dialog__content--active > div > div > div.pa-3.v-card.v-sheet.theme--light > div.ig-betting-slider_main_36re8 > span:nth-child(3)') + '\n' +
               '注數：' + getText(
-            '#app > div.application--wrap > div > div.betting-bottom-bar_main_1nOle > div.betting-bottom-bar_container_v7kMX.bottom-bar--active > div > span.mx-2 > span') + '\n' +
+            '#app > div.application--wrap > div > div.betting-bottom-bar_main_3OzhA > div.betting-bottom-bar_container_2FzNa.bottom-bar--active > div > span.mx-2 > span') + '\n' +
               '總金額：' + getText(
-            '#app > div.application--wrap > div > div.betting-bottom-bar_main_1nOle > div.betting-bottom-bar_container_v7kMX.bottom-bar--active > div > span.betting-bottom-bar_large_1gi64 > span.ig-primary'))
+            '#app > div.application--wrap > div > div.betting-bottom-bar_main_3OzhA > div.betting-bottom-bar_container_2FzNa.bottom-bar--active > div > span.betting-bottom-bar_large_1PhrE > span.ig-primary'))
     click(
-        '#app > div.application--wrap > div > div.betting-bottom-bar_main_1nOle > div.betting-bottom-bar_container_v7kMX.bottom-bar--active > button.v-btn.theme--light.ig-btn_main_2mP9w.betting-bottom-bar_betting_1qX5B')
+        '#app > div.application--wrap > div > div.betting-bottom-bar_main_3OzhA > div.betting-bottom-bar_container_2FzNa.bottom-bar--active > button.v-btn.theme--light.ig-btn_main_2mP9w.betting-bottom-bar_betting_3yJDP')
     wait('#bet-list-view')
-    wait('#bet-list-view > div.bottom-block > div.betting-bottom-bar_main_1nOle > div > button')
+    wait('#bet-list-view > div.bottom-block > div > div > button')
     if rb == 0:
         print('返點：' + getText(
             '#bet-list-view > div.bet-list-content.flex-layout-column > div.bet-list-cell.flex-layout-row > div.flex-layout-column.flex-fill > div:nth-child(2) > div:nth-child(3)') + '\n' +
               '賠率：' + getText(
             '#bet-list-view > div.bet-list-content.flex-layout-column > div.bet-list-cell.flex-layout-row > div.flex-layout-column.flex-fill > div:nth-child(2) > div.enhance') + '\n' +
               '注數：' + getText(
-            '#bet-list-view > div.bottom-block > div.betting-bottom-bar_main_1nOle > div > div > span.mx-2 > span') + '\n' +
+            '#bet-list-view > div.bottom-block > div > div > div > span.mx-2 > span') + '\n' +
               '總金額：' + getText(
-            '#bet-list-view > div.bottom-block > div.betting-bottom-bar_main_1nOle > div > div > span.betting-bottom-bar_large_1gi64 > span.ig-primary'))
+            '#bet-list-view > div.bottom-block > div > div > div > span.betting-bottom-bar_large_1PhrE > span.ig-primary'))
     web.save_screenshot('.\\pic\\' + name + '.png')
-    click('#bet-list-view > div.bottom-block > div.betting-bottom-bar_main_1nOle > div > button')
+    click('#bet-list-view > div.bottom-block > div > div > button')
     # 確認有無跳出下注錯誤訊息
     try:
         sleep(1.5)

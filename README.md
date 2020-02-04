@@ -9,7 +9,15 @@ git clone https://github.com/s51507/python-lottery.git
 ## Manual
 
 ```
-1. 開啟lotteryMain.py
+UI
+
+1.開啟lotteryUI
+
+2.Shift + F10
+-------------------
+CMD
+
+1. 開啟lotteryMain.py (cmd)
 
 2. 最下面打上想要測的彩種代碼，時時彩要在括弧內打上玩法編號(1~3)
    例如：sqssc(1) -> 重慶時時彩，畫面上第一排的玩法

@@ -120,7 +120,7 @@
       <recent name="C:\python-lottery\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.lotteryUI">
+  <component name="RunManager" selected="Python.lotteryMain">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python">
       <module name="python-lottery" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -194,9 +194,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="D:\Python\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
@@ -280,9 +280,9 @@
       <item itemvalue="Python.lotteryAndroid" />
       <item itemvalue="Python.lotteryIOS" />
       <item itemvalue="Python.lotteryMain" />
-      <item itemvalue="Python.lotteryUI" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python.testrb" />
+      <item itemvalue="Python.lotteryUI" />
     </list>
     <recent_temporary>
       <list>
@@ -413,6 +413,28 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="672" y="133" key="#lotteryMain" timestamp="1580793130649">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="672" y="133" key="#lotteryMain/0.0.1920.1040@0.0.1920.1040" timestamp="1580793130649" />
+    <state width="1033" height="276" key="GridCell.Tab.0.bottom" timestamp="1580793143829">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1033" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580793143829" />
+    <state width="1033" height="276" key="GridCell.Tab.0.center" timestamp="1580793143828">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1033" height="276" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580793143828" />
+    <state width="1033" height="276" key="GridCell.Tab.0.left" timestamp="1580793143828">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1033" height="276" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580793143828" />
+    <state width="1033" height="276" key="GridCell.Tab.0.right" timestamp="1580793143829">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1033" height="276" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580793143829" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

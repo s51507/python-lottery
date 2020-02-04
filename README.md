@@ -6,7 +6,7 @@
 git clone https://github.com/s51507/python-lottery.git
 ```
 
-## Manual
+## Description
 
 ```
 UI

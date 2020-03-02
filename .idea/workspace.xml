@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="82e24e04-3995-4965-aab6-428c88606231" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/data/chromedriver.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,45 +33,6 @@
         <option value="Python Script" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>if</find>
-      <find>rebate</find>
-      <find>bjkl8</find>
-      <find>lotteryGame.</find>
-      <find>update_text</find>
-      <find>trigger</find>
-      <find>betUI</find>
-      <find>name</find>
-      <find>outputWritten</find>
-      <find>===========================</find>
-      <find>start</find>
-      <find>ls</find>
-      <find>login</find>
-      <find>app</find>
-      <find>QtGui</find>
-      <find>tb_lottery</find>
-      <find>廣東11選5</find>
-      <find>gdsyxw</find>
-      <find>tb</find>
-      <find>Remote</find>
-      <find>self.</find>
-      <find>threading</find>
-      <find>PMingLiU</find>
-      <find>CheckWindow</find>
-      <find>.bet</find>
-      <find>.check</find>
-      <find>.bet('</find>
-      <find>rrr</find>
-      <find>bet</find>
-      <find>match</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>'+gameName+'</replace>
-      <replace>.check</replace>
-      <replace>.check('</replace>
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -280,9 +241,9 @@
       <item itemvalue="Python.lotteryAndroid" />
       <item itemvalue="Python.lotteryIOS" />
       <item itemvalue="Python.lotteryMain" />
+      <item itemvalue="Python.lotteryUI" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python.testrb" />
-      <item itemvalue="Python.lotteryUI" />
     </list>
     <recent_temporary>
       <list>
@@ -419,32 +380,21 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="672" y="133" key="#lotteryMain/0.0.1920.1040@0.0.1920.1040" timestamp="1580793130649" />
-    <state width="1033" height="276" key="GridCell.Tab.0.bottom" timestamp="1580793143829">
+    <state width="1033" height="276" key="GridCell.Tab.0.bottom" timestamp="1580794414685">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1033" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580793143829" />
-    <state width="1033" height="276" key="GridCell.Tab.0.center" timestamp="1580793143828">
+    <state width="1033" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580794414685" />
+    <state width="1033" height="276" key="GridCell.Tab.0.center" timestamp="1580794414685">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1033" height="276" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580793143828" />
-    <state width="1033" height="276" key="GridCell.Tab.0.left" timestamp="1580793143828">
+    <state width="1033" height="276" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580794414685" />
+    <state width="1033" height="276" key="GridCell.Tab.0.left" timestamp="1580794414684">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1033" height="276" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580793143828" />
-    <state width="1033" height="276" key="GridCell.Tab.0.right" timestamp="1580793143829">
+    <state width="1033" height="276" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580794414684" />
+    <state width="1033" height="276" key="GridCell.Tab.0.right" timestamp="1580794414685">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1033" height="276" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580793143829" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/lotteryIOS.py</url>
-          <line>5</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state width="1033" height="276" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580794414685" />
   </component>
 </project>
